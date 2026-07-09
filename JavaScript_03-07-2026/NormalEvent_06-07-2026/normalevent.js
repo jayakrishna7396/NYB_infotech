@@ -7,31 +7,7 @@ button.addEventListener("click",function(){
     console.log("button clicked")
 })
 
-
-//throttling the event may happen continuously, but my function will execute only once every fixed amount of time .
-let lastclick=0
-let b=0
-button.addEventListener("click",function(){   
-let current= Date.now()
- if(current- lastclick >=5000){
-     b+=1;
-    console.log("value of b is:",b);
-    lastclick = current;
-    }
-    console.log("button clicked")
-})
-
-//
-let t
-button.addEventListener("click",function(){
-clearTimeout(t)
-t=setTimeout(function(){
-c+=1
-console.log("value of c is:",c)
-},2000)
-
-})
-
+//throttling event
 //call back function  A callback function is a function passed into another function as an argument, which is called (executed) after the main function finishes its work.
 function function1(s){
     console.log(s)

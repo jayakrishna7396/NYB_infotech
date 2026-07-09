@@ -52,5 +52,23 @@ promise.finally([ab,ba])
 console.log("Done")
 })
 .catch(()=>{
-    
+
 })
+
+//example
+let p = new Promise((resolve, reject) => {
+    let marks = 80;
+
+    if (marks >= 35) {
+        resolve("Student Passed");
+    } else {
+        reject("Student Failed");
+    }
+});
+
+p.then((result) => {
+    console.log(result);
+})
+.catch((error) => {
+    console.log(error);
+});
