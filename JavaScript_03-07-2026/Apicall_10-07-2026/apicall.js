@@ -4,7 +4,7 @@
 //get    --->fetching the data
 //post   --->to send the data
 //put    --->it changes the entire record
-//patch  --->uodate the partial data
+//patch  --->update the partial data
 //delete --->to delete the data
 
 //JSON(javascript object notation) apis usually send data in json

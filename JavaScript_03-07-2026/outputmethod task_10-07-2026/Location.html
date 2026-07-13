@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="showInfo()">Show URL Info</button>
+
+<p id="demo"></p>
+
+<script>
+function showInfo() {
+    document.getElementById("demo").innerHTML =
+    "Full URL: " + location.href + "<br>" +
+    "Hostname: " + location.hostname + "<br>" +
+    "Pathname: " + location.pathname + "<br>" +
+    "Protocol: " + location.protocol;
+}
+</script>
+
+</body>
+</html>

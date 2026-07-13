@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="goForward()">Forward</button>
+
+<button onclick="goPrevious()">Go Back 2 Pages</button>
+<p id="demo">hi</p>
+<button onclick="showHistory()">History Length</button>
+
+<script>
+function goForward() {
+    history.forward();
+}
+
+function goPrevious() {
+    history.go(-2);
+}
+
+function showHistory() {
+    document.getElementById("demo").innerHTML =
+    "History Length: " + history.length;
+}
+</script>
+
+</body>
+</html>
