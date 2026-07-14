@@ -1,0 +1,78 @@
+/* Universal Selector */
+*{
+    margin:10px;
+    font-family:Arial;
+}
+
+/* Element Selector */
+p{
+    color:purple;
+}
+
+/* ID Selector */
+#para{
+    color:red;
+}
+
+/* Class Selector */
+.box{
+    background-color:yellow;
+}
+
+/* Group Selector */
+h3,button{
+    color:blue;
+}
+
+/* Descendant Selector */
+div p{
+    color:green;
+}
+
+/* Child Selector */
+section > p{
+    color:orange;
+}
+
+/* Adjacent Sibling Selector */
+h4 + p{
+    color:brown;
+}
+
+/* General Sibling Selector */
+h5 ~ p{
+    color:deeppink;
+}
+
+/* Border */
+.border-box{
+    width:200px;
+    height:100px;
+    border:4px solid black;
+    border-radius:15px;
+    text-align:center;
+    line-height:100px;
+}
+
+/* Background */
+.background-box{
+    width:300px;
+    height:200px;
+    background-color:lightblue;
+    background-image:url("background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    color:white;
+    text-align:center;
+    line-height:200px;
+}
+
+/* Width & Height */
+.container{
+    width:80%;
+    height:150px;
+    background-color:lightgreen;
+    text-align:center;
+    line-height:150px;
+}

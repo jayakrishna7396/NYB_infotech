@@ -1,0 +1,48 @@
+<!-- Introduction to CSS -->
+
+<!-- Definition -->
+<!-- CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance and layout of HTML web pages. It defines how HTML elements are displayed, including colors, fonts, spacing, borders, backgrounds, and page layouts. -->
+
+<!-- Why Do We Use CSS? -->
+<!-- Makes web pages attractive. -->
+<!-- Separates content (HTML) from design (CSS). -->
+<!-- Reduces duplicate code. -->
+<!-- Makes websites easier to maintain. -->
+<!-- Supports responsive web design. -->
+
+
+
+//Introduction to CSS
+
+//CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and layout of HTML documents. 
+//It controls how web pages look by styling elements such as colors, fonts, spacing, borders, backgrounds, and page layouts.
+//HTML provides the structure of a webpage, while CSS provides its design and appearance.
+
+
+Why Do We Use CSS?
+
+Makes web pages attractive and visually appealing.
+Separates content (HTML) from design (CSS).
+Reduces code duplication by applying the same styles to multiple elements.
+Makes websites easier to maintain and update.
+Helps create responsive designs that work on different screen sizes.
+
+//css definition
+
+//CSS (Cascading Style Sheets) is a style sheet language used to control the appearance and layout of web pages.
+// It is used with HTML to define how elements such as text, images, colors, fonts, spacing, and page layouts are displayed.
+
+//types of css
+
+*inline
+Applied directly inside an HTML element using the style attribute
+
+
+*Internal CSS
+<!-- Written inside the <style> tag in the <head> section. -->
+
+
+External CSS
+Written in a separate .css file and linked to the HTML page.
+
+

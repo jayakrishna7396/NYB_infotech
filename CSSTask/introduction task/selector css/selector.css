@@ -1,0 +1,93 @@
+/* types of  selector */
+/* 1.element selector */
+/* 2.class */
+/* 3.id */
+/* 4.universal */
+
+
+/* // element selector */
+p{
+color:blue;
+}
+
+/* Class Selector */
+.box{
+background:yellow;
+}
+
+/* id selector */
+#title{
+color:red;
+}
+
+
+/* universal selector */
+*{
+margin:0;
+padding:0;
+}
+
+/* Descendant Selector */
+div p{
+color:green;
+}
+
+/* Child Selector */
+div > p{
+color:red;
+}
+
+/* Adjacent Sibling Selector */
+h1+p{
+color:blue;
+}
+
+/* General Sibling Selector */
+h1~p{
+color:purple;
+}
+
+
+/* Different Border Styles */
+/* solid */
+/* dashed */
+/* dotted */
+/* double */
+/* groove */
+/* ridge */
+/* inset */
+/* outset */
+
+
+.box1{
+border:3px solid red;
+}
+
+.box2{
+border:3px dashed blue;
+}
+
+.box3{
+border:3px dotted green;
+}
+
+
+/* Background Color */
+body{
+background-color:lightblue;
+}
+
+/* Background Image */
+body{
+background-image:url("image.jpg");
+}
+
+
+/* //backround position */
+/* left */
+/* right */
+/* top */
+/* bottom */
+
+/* Background Size */
+/* background-size:cover; */

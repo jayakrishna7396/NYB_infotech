@@ -1,0 +1,20 @@
+/* ways to Apply Styles to an HTML Element  */
+
+/* CSS can be applied to HTML elements in three different ways: */
+/* Inline CSS */
+/* Internal CSS */
+/* External CSS */
+
+/* //inline css */
+/* Inline CSS is applied directly to an HTML element using the style attribute. It affects only that specific element. */
+
+
+
+/* Internal CSS */
+/* internal CSS is written inside the <style> tag in the <head> section of an HTML document. */
+/* It applies styles to the current webpage only. */
+
+
+/* External CSS */
+/* External CSS is written in a separate .css file and linked to the HTML document.  */
+/* This is the recommended method for most websites. */

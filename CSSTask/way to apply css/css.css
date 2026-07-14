@@ -1,0 +1,51 @@
+
+
+/* //inline css */
+/* Inline CSS is applied directly to an HTML element using the style attribute. It affects only that specific element. */
+
+
+
+/* Internal CSS */
+/* internal CSS is written inside the <style> tag in the <head> section of an HTML document. */
+/* It applies styles to the current webpage only. */
+
+
+/* External CSS */
+/* External CSS is written in a separate .css file and linked to the HTML document.  */
+/* This is the recommended method for most websites. */
+
+
+/* // Inline CSS
+// Applied directly inside an HTML tag.
+
+// Advantages
+// Very easy
+// Good for testing
+// Highest priority
+
+// Disadvantages
+// Difficult to maintain
+// Cannot reuse styles */ 
+
+
+/* Internal CSS */
+/* Written inside the <style> tag. */
+
+/* Advantages */
+/* Easy for one webpage */
+/* Better than inline */
+
+/* Disadvantages */
+/* Cannot use in multiple pages */
+
+
+/* External CSS */
+h1{
+color:blue;
+}
+/* Advantages */
+
+/* Best method */
+/* Reusable */
+/* Easy maintenance */
+/* Faster website/ development */
