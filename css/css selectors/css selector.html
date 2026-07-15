@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css selector.css">
+    <style>
+         /* Descendant Selector */
+        div p {
+            color: blue;
+        }
+
+        /* Child Selector */
+        div > h3 {
+            color: red;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: green;
+        }
+    </style>
 </head>
 <h1>Welcome</h1>
 <h1>CSS</h1>
@@ -17,16 +33,14 @@
 <h1>Heading</h1>
 <p>Paragraph</p>
 <body>
-    <!-- <h1>Welcome</h1>
-<h1>CSS</h1>
-
-<h1 id="title">Welcome</h1>
-
-<h1 class="color">Heading</h1>
-<p class="color">Paragraph</p>
-
-<h1>Heading</h1>
-<p>Paragraph</p> -->
+    <div>
+    <p>Paragraph 1</p>
+    <section>
+        <p>Paragraph 2</p>
+    </section>
+</div>
+<p>Paragraph 3</p>
+ 
     
 </body>
 </html>

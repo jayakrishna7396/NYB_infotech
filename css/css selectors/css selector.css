@@ -41,3 +41,13 @@ group
 h1,p{
     color:purple;
 }
+
+/* Descendant Selector */
+parent child {
+    property: value;
+}
+
+/* Child Selector (>) */
+parent > child {
+    property: value ;
+}

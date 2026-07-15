@@ -1,0 +1,44 @@
+/* css box */
+/* defination */
+/* The CSS Box Model is the way CSS represents every HTML element as a rectangular box. It consists of four layers: */
+
+/* 1.Content */
+/* The actual content of the element (text, image, etc.). */
+/* Controlled using properties like width and height. */
+div {
+  width: 200px;
+  height: 100px;
+}
+
+/* 2.Padding */
+/* Space between the content and the border. */
+/* Increases the size of the element. */
+div {
+  padding: 20px;
+}
+
+/* 3.Border */
+/* Wraps around the padding and content. */
+/* Can have different widths, colors, and styles. */
+div {
+  border: 2px solid black;
+}
+
+/* Margin */
+/* Space outside the border. */
+/* Creates distance between elements. */
+div {
+  margin: 15px;
+}
+
+/* example */
+/* html */
+/* <div class="box">Hello World</div> */
+
+/* css */
+/* .box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 10px;
+} */
