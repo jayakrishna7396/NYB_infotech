@@ -167,3 +167,17 @@ nav{
 }
 
 }
+
+/* padding and margin values */
+.box2 {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 20px;
+    }
+    .box {
+    width: 250px;
+    background-color: lightyellow;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+}

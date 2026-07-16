@@ -56,11 +56,11 @@ h5 ~ p{
 
 /* Background */
 .background-box{
-    width:300px;
+    width: 500px;
     height:200px;
     background-color:lightblue;
-    background-image:url("background.jpg");
-    background-size:cover;
+    background-image:url("https://www.bing.com/images/search?view=detailV2&ccid=PJSYcceL&id=36157921660DD227535F87918C44242E62F0CC74&thid=OIP.PJSYcceLMmsNZDWwAUVC2QHaHZ&mediaurl=https%3a%2f%2fstatic.vecteezy.com%2fsystem%2fresources%2fpreviews%2f022%2f024%2f539%2fnon_2x%2ftom-and-jerry-cartoon-free-vector.jpg&exph=980&expw=981&q=tom+and+jerry&FORM=IRPRST&ck=A662DB7AD841ECC95ACCBB5DFCD29641&selectedIndex=2&itb=0" );
+    background-size: cover;
     background-repeat:no-repeat;
     background-position:center;
     color:white;

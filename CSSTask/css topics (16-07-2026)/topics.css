@@ -1,0 +1,220 @@
+/* Universal Selector */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:Arial;
+    padding:20px;
+}
+
+/* Colors */
+
+.red{
+    color:red;
+}
+
+/* Background */
+
+.background{
+    background:lightblue;
+    height:100px;
+}
+
+/* Border */
+
+.border{
+    border:3px solid blue;
+    border-radius:10px;
+}
+
+/* Margin & Padding */
+
+.spacing{
+    margin:20px;
+    padding:20px;
+    background:lightgreen;
+}
+
+/* Box Model */
+
+.model{
+    width:200px;
+    padding:20px;
+    border:2px solid black;
+    margin:20px;
+}
+
+/* Float */
+
+.float-img{
+    float:left;
+    margin-right:15px;
+}
+
+.clear{
+    clear:both;
+}
+
+/* Position */
+
+.position-box{
+    position:relative;
+    left:30px;
+    background:orange;
+    width:150px;
+    padding:15px;
+}
+
+/* Z-index */
+
+.parent{
+    position:relative;
+    height:120px;
+}
+
+.box1{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:red;
+    z-index:1;
+}
+
+.box2{
+    position:absolute;
+    left:40px;
+    top:30px;
+    width:100px;
+    height:100px;
+    background:blue;
+    z-index:2;
+}
+
+/* Opacity */
+
+.opacity{
+    opacity:0.6;
+    margin-top:20px;
+}
+
+/* Flexbox */
+
+.flex-container{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    background:#ddd;
+
+    padding:20px;
+
+}
+
+.flex-container div{
+
+    background:green;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+/* Grid */
+
+.grid-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.grid-container div{
+
+    background:purple;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+/* Specificity */
+
+.text{
+
+    color:green;
+
+}
+
+#special{
+
+    color:red;
+
+}
+
+#special{
+
+    color:blue !important;
+
+}
+
+/* Alignment */
+
+.center-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:200px;
+
+    height:100px;
+
+    background:gold;
+
+    margin:20px auto;
+
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+.flex-container{
+
+    flex-direction:column;
+
+}
+
+.grid-container{
+
+    grid-template-columns:1fr;
+
+}
+
+body{
+
+    background:#f5f5f5;
+
+}
+
+}

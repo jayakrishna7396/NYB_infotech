@@ -1,0 +1,206 @@
+body{
+    font-family:Arial;
+    margin:20px;
+}
+
+/* Display */
+
+.block{
+    display:block;
+    background:skyblue;
+    padding:10px;
+    margin:10px;
+}
+
+.inline{
+    display:inline;
+    background:orange;
+    padding:10px;
+}
+
+.inline-block{
+    display:inline-block;
+    width:150px;
+    background:lightgreen;
+    padding:10px;
+    margin:10px;
+}
+
+.hide{
+    display:none;
+}
+
+/* Position */
+
+.parent{
+    position:relative;
+    height:180px;
+    border:2px solid black;
+}
+
+.static{
+    position:static;
+    background:yellow;
+}
+
+.relative{
+    position:relative;
+    left:40px;
+    background:pink;
+}
+
+.absolute{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:lightblue;
+}
+
+.fixed{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:10px;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+    background:green;
+    color:white;
+    padding:10px;
+}
+
+/* Float */
+
+.left{
+    float:left;
+    width:120px;
+    background:orange;
+    padding:20px;
+}
+
+.right{
+    float:right;
+    width:120px;
+    background:skyblue;
+    padding:20px;
+}
+
+.clear{
+    clear:both;
+}
+
+/* Flexbox */
+
+.flex-container{
+    display:flex;
+    justify-content:space-around;
+    background:#ddd;
+    padding:20px;
+}
+
+.item{
+    background:blue;
+    color:white;
+    padding:20px;
+}
+
+/* Grid */
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.grid-item{
+    background:purple;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Z-index */
+
+.box1{
+    width:150px;
+    height:150px;
+    background:red;
+    position:relative;
+    z-index:1;
+}
+
+.box2{
+    width:150px;
+    height:150px;
+    background:blue;
+    position:relative;
+    left:50px;
+    top:-80px;
+    z-index:2;
+}
+
+/* Responsive Layout */
+
+.layout{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area:header;
+    background:teal;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    grid-area:nav;
+    background:gray;
+    color:white;
+    padding:20px;
+}
+
+main{
+    grid-area:main;
+    padding:20px;
+}
+
+footer{
+    grid-area:footer;
+    background:black;
+    color:white;
+    padding:20px;
+}
+
+.cards{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:150px;
+    background:lightgreen;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.cards{
+    flex-direction:column;
+}
+
+.grid-container{
+    grid-template-columns:1fr;
+}
+
+}

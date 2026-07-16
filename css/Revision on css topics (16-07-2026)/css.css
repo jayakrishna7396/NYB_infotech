@@ -1,0 +1,140 @@
+/* 1.Introduction to CSS3 */
+/* CSS stands for Cascading Style Sheets. */
+/* CSS is used to style HTML pages. */
+/* CSS3 is the latest version of CSS and includes: */
+/* Animations */
+/* Transitions */
+/* Flexbox */
+/* Grid */
+/* Media Queries */
+/* Rounded corners */
+/* Shadows */
+
+
+
+/* 2.Types of CSS */
+
+/* There are 3 types. */
+/* inline  
+Applied directly inside an HTML element using the style attribute */
+
+/* internal */
+/* Styles are written inside the <style> tag in the <head> section of the HTML document. */ 
+
+/* external */
+/* Styles are written in a separate .css file and linked to the HTML document.  */ 
+
+
+/* 3.selector */
+/* element selector-- select all elements with same tag and name
+id selector     --select the element with a specific id (#)
+class selector  --select the element in specific class (.)
+groupselectorr  --select the multiple element together (,)
+universal selector --select the all elements (*)
+
+descending selector --Selects elements inside another element.(space)
+adjacent selector  --Selects the next immediate sibling element.(+)
+child selctor    --Selects only the direct child of an element(>) */
+
+
+/* 4.CSS Specificity
+Inline Style
+↓
+ID Selector
+↓
+Class Selector
+
+
+↓
+Element Selector */
+
+/* 5 colours code
+hex
+rgb
+rgba
+hsl
+ 
+/* 6.colur background
+background-color:skyblue;
+background-image:url("");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center; */
+
+/* 7.css border
+rounder corners
+
+border style
+solid
+dashed
+dotted
+double
+groove */
+
+
+/* 8.css margin
+margin=outside spacing
+margin-top:10px;
+margin-right:20px;
+margin-bottom:10px;
+margin-left:20px; */
+
+/* 9. padding
+paddding=inside spacing
+padding:20px; */
+
+/* 10.css box model
+Margin
+Border
+Padding
+Content */
+
+/* 11.css float
+moves to left to right */
+
+/* 12 css position
+*Static (Default)
+position:static;
+
+*Relative
+position:relative;
+top:20px;
+
+*Absolute
+position:absolute;
+top:20px;
+left:50px;
+
+*fixed
+position:fixed;
+bottom:10px;
+right:10px; */
+
+/* *sticky
+position:sticky;
+top:0; */
+
+/* 13.CSS Z-Index
+Controls stack order. */
+
+/* 14.Opacity
+Controls transparency.
+1 = Fully visible
+0 = Invisible
+0.5 = Half transparent */
+
+/* 15. CSS Flexbox
+Used for one-dimensional layouts (row or column). */
+
+/* 16. CSS Grid System
+Used for two-dimensional layouts. */
+
+/* 17. Responsive Design
+Makes websites work on all screen sizes.
+Mobile → up to 600px
+Tablet → 601–768px
+Laptop → 769–1024px
+Desktop → above 1024px */
+
+/* 18. !important
+Overrides normal CSS priority. */
