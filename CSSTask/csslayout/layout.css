@@ -40,7 +40,7 @@ body{
 
 .static{
     position:static;
-    background:yellow;
+    background:rgb(114, 240, 145);
 }
 
 .relative{
