@@ -25,3 +25,6 @@ export function ThemeProvider({ children }) {
     </ThemeContext.Provider>
   );
 }
+
+
+// Context API allows you to share data globally between React components without Props Drilling.
