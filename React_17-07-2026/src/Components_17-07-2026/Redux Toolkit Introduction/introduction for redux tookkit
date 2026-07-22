@@ -1,0 +1,10 @@
+Redux Toolkit Introduction 
+Redux Toolkit (RTK) is the official recommended way to use Redux. It helps you manage global state in a React application with less and simpler code.
+
+Simple Example
+Imagine an online shopping app:
+Redux Store
+   │
+   ├── User Data
+   ├── Products
+   └── Shopping Cart
