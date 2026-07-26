@@ -1,4 +1,4 @@
-function App() {
+function Render() {
   const city = "Hyderabad";
 
   return (
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Render;

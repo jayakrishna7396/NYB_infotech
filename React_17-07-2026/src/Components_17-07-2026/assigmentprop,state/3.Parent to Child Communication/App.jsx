@@ -1,6 +1,6 @@
 import Student from "./Student";
 
-function App() {
+function Parent10() {
   const student1 = {
     name: "Jaya Krishna",
     age: 22,
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default Parent10;
