@@ -1,0 +1,19 @@
+Class Component is created using a JavaScript class.
+
+Example:
+
+import React, { Component } from "react";
+
+class Welcome extends Component {
+  render() {
+    return <h1>Welcome to React</h1>;
+  }
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome />
+    </div>
+  );
+}

@@ -1,0 +1,38 @@
+Virtual DOM
+
+The Virtual DOM is a lightweight representation of the actual browser DOM.
+
+When your React application changes, React:
+
+Creates an updated Virtual DOM.
+Compares it with the previous Virtual DOM.
+Finds what changed.
+Updates only the necessary parts of the real DOM.
+Simple example
+import { useState } from "react";
+
+<!-- function App() { -->
+  const [count, setCount] = useState(0);
+
+  <!-- return (
+    <div>
+      <h1>Counter</h1>
+
+      <p>Count: {count}</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default App; -->
+
+When you click the button, the count changes. React updates the required UI efficiently.
+
+You don't directly manipulate the DOM using methods like:
+
+document.getElementById()
+
+Instead, you update state, and React updates the UI.

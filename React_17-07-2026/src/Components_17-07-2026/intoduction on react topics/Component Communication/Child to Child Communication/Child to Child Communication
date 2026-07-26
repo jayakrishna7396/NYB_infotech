@@ -1,0 +1,54 @@
+Two sibling components cannot directly communicate with each other.
+
+Instead, they communicate through their Parent.
+ChildA.jsx
+function ChildA(props) {
+  return (
+    <div>
+      <h2>Child A</h2>
+
+      <button onClick={() => props.sendData("Hello from Child A")}>
+        Send Data
+      </button>
+    </div>
+  );
+}
+
+export default ChildA;
+
+
+ChildB.jsx
+function ChildB(props) {
+  return (
+    <div>
+      <h2>Child B</h2>
+
+      <p>Message: {props.message}</p>
+    </div>
+  );
+}
+
+export default ChildB;
+
+
+
+
+App.jsx
+import { useState } from "react";
+import ChildA from "./ChildA";
+import ChildB from "./ChildB";
+
+function App() {
+  const [message, setMessage] = useState("");
+
+  return (
+    <div>
+      <h1>Child to Child Communication</h1>
+
+      <ChildA sendData={setMessage} />
+
+      <ChildB message={message} />
+    </div>
+  );
+}
+export default App;

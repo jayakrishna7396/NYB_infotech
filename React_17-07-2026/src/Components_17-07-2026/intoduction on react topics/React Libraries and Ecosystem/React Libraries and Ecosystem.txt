@@ -1,0 +1,22 @@
+React Libraries and Ecosystem
+React itself focuses mainly on building the UI. You can use other libraries for additional features.
+
+Some popular React libraries are:
+Library	Use
+React Router	          Page navigation
+Redux Toolkit	          Global state management
+Axios	                  API requests
+React Hook Form	          Form management
+Tailwind CSS	          Styling
+Material UI            	Ready-made UI components
+
+For example, to install React Router:
+npm install react-router-dom
+
+To install Axios:
+npm install axios
+
+To install Redux Toolkit:
+npm install @reduxjs/toolkit react-redux
+
+You don't need to install all of these for every project. Install them only when your project needs them.
