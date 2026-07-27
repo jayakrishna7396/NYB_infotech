@@ -16,12 +16,12 @@ import Parent4 from '../../Components_17-07-2026/Assigment on functional compoun
 import Parent5 from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/Display Dynamic Data Using Props/Parent5'
 import FunctionalComponent from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/jsx practise/Functional'
 import JSXPractice from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/jsx practise/JSXPractice'
-import Render from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/jsx practise/RENDER.JSX'
 import FragmentComponent from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/jsx practise/Fragment'
 import Parent6 from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/Nest Multiple Child Components/Parent6'
 import Parent7 from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/Pass Data from Parent to Child/Parent7'
 import Parent8 from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/State and Props/Parent8'
 import Stateandprops from '../../Components_17-07-2026/Assigment on functional compound_20-07-2026/State and Props/Stateandprops'
+import PropsDrilling from '../../Components_17-07-2026/intoduction on react topics/Component Communication/Props Drilling/PropsDrilling'
 
 const PropsPage = () => {
   return (
@@ -48,7 +48,7 @@ const PropsPage = () => {
 {/* JSX PRACTICE */}
 <FunctionalComponent/>
 <JSXPractice/>
-<Render/>
+
 <FragmentComponent/>
 <Parent6/>
 <Parent7/>
@@ -56,7 +56,7 @@ const PropsPage = () => {
 <Stateandprops/>
 <Header/>
 <Student/>
-
+<PropsDrilling/>
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import Student from "./Student";
+import Child from "./Child";
+
 
 function Parent() {
   const studentName = "Jaya Krishna";
@@ -8,7 +9,7 @@ function Parent() {
     <div>
       <h1>Parent Component</h1>
 
-      <Student
+      <Child
         name={studentName}
         course={course}
       />

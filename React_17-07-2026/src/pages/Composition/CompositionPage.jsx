@@ -4,6 +4,7 @@ const CompositionPage = () => {
   return (
     <div>
        <Composition/>
+      
 
     </div>
   )

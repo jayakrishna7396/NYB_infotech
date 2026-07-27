@@ -1,4 +1,4 @@
-function Student(props) {
+function Child(props) {
   return (
     <div>
       <h2>Child Component</h2>
@@ -9,4 +9,4 @@ function Student(props) {
   );
 }
 
-export default Student;
+export default Child;

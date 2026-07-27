@@ -1,5 +1,4 @@
 import React from 'react'
-import Main1 from '../../state mangment in api/Main1'
 import ApiInfo from '../../topics of api/component/ApiInfo'
 import StatusCode from '../../topics of api/component/StatusCode'
 import UserList from '../../topics of api/component/UserList'
@@ -13,7 +12,7 @@ import UseHook from '../../use local hook/UseHook'
 const StatePage = () => {
   return (
     <div>
-        <Main1/>
+       
         <h1>API</h1>
        <ApiInfo/>
        <StatusCode/>

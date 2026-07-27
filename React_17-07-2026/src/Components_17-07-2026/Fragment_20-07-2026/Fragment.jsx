@@ -1,21 +1,13 @@
 import React from 'react'
 
-export default function Fragment() {
-  return (
-    // without Fragments
-    <div>
+const Fragment = () => {
+    return(
+  // without Fragments
+    <div>Fragment
         <h1>hello</h1>
         <p>hi</p>
-    </div>
+        </div>
   )
 }
 
-export function Fragment1 () {
-  return (
-    // with Fragments
-    <>
-        <h1>hello</h1>
-        <p>hi</p>
-    </>
-  )
-}
+export default Fragment

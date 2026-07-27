@@ -1,13 +1,12 @@
-import React from 'react'
-import Parent2 from "./Parent2"
-
-function Child2() {
-    let a=10
+function Child2({ name, email }) {
   return (
     <div>
-        <Parent2 value={}/>
+      <h2>Registration Details</h2>
+
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
     </div>
-  )
+  );
 }
 
 export default Child2;
