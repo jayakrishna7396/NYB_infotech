@@ -11,6 +11,9 @@ import DynamicFormHandling from './Components_17-07-2026/DynamicFormHandling/Dya
 import FragmentComponent from './Components_17-07-2026/Assigment on functional compound_20-07-2026/jsx practise/Fragment'
 import GlobalStatepage from './pages/Global state/GlobalStatepage'
 import ApiStatusPage from './pages/ApiComponent/ApiStatuspage'
+import HocPage from './pages/Hoc_28-07-2026/Hocpage'
+import CustomHookpage from './pages/CustomHook/CustomHookpage'
+
 
 
 const App = () => {
@@ -32,7 +35,8 @@ const App = () => {
       <Route path= '/form' element={<DynamicFormHandling/>}/>
       <Route path='/global' element={<GlobalStatepage/>}/>
       <Route path='/Api' element={<ApiStatusPage/>}/>
-
+     <Route path='/Hoc' element={<HocPage/>}/>
+     <Route path='/CustomHook'element={<CustomHookpage/>}/>
     </Routes>
     </BrowserRouter>
   )
