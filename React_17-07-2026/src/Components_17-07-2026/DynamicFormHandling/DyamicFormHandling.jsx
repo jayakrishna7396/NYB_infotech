@@ -1,46 +1,149 @@
+// import { useState } from "react";
+
+// function DynamicFormHandling() {
+//   const [users, setUsers] = useState([
+//     { name: "", email: "" }
+//   ]);
+
+//   // Add a new input field
+//   const addUser = () => {
+//     setUsers([...users, { name: "", email: "" }]);
+//   };
+
+//   // Update input values
+//   const handleChange = (index, event) => {
+//     const newUsers = [...users];
+
+//     newUsers[index][event.target.name] = event.target.value;
+
+//     setUsers(newUsers);
+//   };
+
+//   // Remove input field
+//   const removeUser = (index) => {
+//     const newUsers = users.filter((_, i) => i !== index);
+
+//     setUsers(newUsers);
+//   };
+
+//   // Submit form
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+
+//     console.log(users);
+//     alert("Form submitted successfully!");
+//   };
+
+//   return (
+//     <div>
+//       <h1>Dynamic Form</h1>
+
+//       <form onSubmit={handleSubmit}>
+//         {users.map((user, index) => (
+//           <div key={index}>
+//             <input
+//               type="text"
+//               name="name"
+//               placeholder="Enter Name"
+//               value={user.name}
+//               onChange={(event) => handleChange(index, event)}
+//             />
+
+//             <input
+//               type="email"
+//               name="email"
+//               placeholder="Enter Email"
+//               value={user.email}
+//               onChange={(event) => handleChange(index, event)}
+//             />
+
+//             <button
+//               type="button"
+//               onClick={() => removeUser(index)}
+//             >
+//               Remove
+//             </button>
+
+//             <br /><br />
+//           </div>
+//         ))}
+
+//         <button type="button" onClick={addUser}>
+//           Add User
+//         </button>
+
+//         <button type="submit">
+//           Submit
+//         </button>
+//       </form>
+//     </div>
+//   );
+// }
+
+// export default DynamicFormHandling;
+
 import { useState } from "react";
 
 function DynamicFormHandling() {
   const [users, setUsers] = useState([
-    { name: "", email: "" }
+    {
+      name: "",
+      email: "",
+    },
   ]);
 
-  // Add a new input field
+  // Add a new user input
   const addUser = () => {
-    setUsers([...users, { name: "", email: "" }]);
+    setUsers((previousUsers) => [
+      ...previousUsers,
+      {
+        name: "",
+        email: "",
+      },
+    ]);
   };
 
-  // Update input values
+  // Handle input changes
   const handleChange = (index, event) => {
-    const newUsers = [...users];
+    const { name, value } = event.target;
 
-    newUsers[index][event.target.name] = event.target.value;
-
-    setUsers(newUsers);
+    setUsers((previousUsers) =>
+      previousUsers.map((user, i) =>
+        i === index
+          ? {
+              ...user,
+              [name]: value,
+            }
+          : user
+      )
+    );
   };
 
-  // Remove input field
+  // Remove user input
   const removeUser = (index) => {
-    const newUsers = users.filter((_, i) => i !== index);
-
-    setUsers(newUsers);
+    setUsers((previousUsers) =>
+      previousUsers.filter((_, i) => i !== index)
+    );
   };
 
   // Submit form
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log(users);
+    console.log("Submitted Users:", users);
+
     alert("Form submitted successfully!");
   };
 
   return (
     <div>
-      <h1>Dynamic Form</h1>
+      <h1>Dynamic Form Handling</h1>
 
       <form onSubmit={handleSubmit}>
         {users.map((user, index) => (
           <div key={index}>
+            <h3>User {index + 1}</h3>
+
             <input
               type="text"
               name="name"
@@ -48,6 +151,9 @@ function DynamicFormHandling() {
               value={user.name}
               onChange={(event) => handleChange(index, event)}
             />
+
+            <br />
+            <br />
 
             <input
               type="email"
@@ -57,18 +163,24 @@ function DynamicFormHandling() {
               onChange={(event) => handleChange(index, event)}
             />
 
+            <br />
+            <br />
+
             <button
               type="button"
               onClick={() => removeUser(index)}
             >
-              Remove
+              Remove User
             </button>
 
-            <br /><br />
+            <hr />
           </div>
         ))}
 
-        <button type="button" onClick={addUser}>
+        <button
+          type="button"
+          onClick={addUser}
+        >
           Add User
         </button>
 
@@ -81,3 +193,4 @@ function DynamicFormHandling() {
 }
 
 export default DynamicFormHandling;
+

@@ -1,26 +1,36 @@
-import { useState } from "react";
 
-function useCounter() {
-  const [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount(count + 1);
-  };
 
-  const decrement = () => {
-    setCount(count - 1);
-  };
 
-  const reset = () => {
-    setCount(0);
-  };
+import useCounter from "./useCounter";
 
-  return {
+function Counter() {
+  const {
     count,
     increment,
     decrement,
-    reset
-  };
+    reset,
+  } = useCounter();
+
+  return (
+    <div>
+      <h2>Counter App</h2>
+
+      <h3>Count: {count}</h3>
+
+      <button onClick={increment}>
+        Increment
+      </button>
+
+      <button onClick={decrement}>
+        Decrement
+      </button>
+
+      <button onClick={reset}>
+        Reset
+      </button>
+    </div>
+  );
 }
 
-export default useCounter;
+export default Counter;
