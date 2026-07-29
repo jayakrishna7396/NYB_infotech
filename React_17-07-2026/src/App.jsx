@@ -13,6 +13,11 @@ import GlobalStatepage from './pages/Global state/GlobalStatepage'
 import ApiStatusPage from './pages/ApiComponent/ApiStatuspage'
 import HocPage from './pages/Hoc_28-07-2026/Hocpage'
 import CustomHookpage from './pages/CustomHook/CustomHookpage'
+import Purecomponentpage from './pages/Purecomponent_29-07-2026/Purecomponentpage'
+import GlobalSatetPage1 from './global sate/GolobalSatePage1'
+import Reactmemopage from './pages/Reactmemo_29-07-2026/Reactmemopage'
+import Usecallback from './pages/usecallback/Usecallbackpage'
+import Usememopage from './pages/Usememo/Usememopage'
 
 
 
@@ -36,7 +41,12 @@ const App = () => {
       <Route path='/global' element={<GlobalStatepage/>}/>
       <Route path='/Api' element={<ApiStatusPage/>}/>
      <Route path='/Hoc' element={<HocPage/>}/>
-     <Route path='/CustomHook'element={<CustomHookpage/>}/>
+     <Route path='/customhook'element={<CustomHookpage/>}/>
+     <Route path='/purecomponent'element={<Purecomponentpage/>}/>
+     <Route path='/globalstate' element={<GlobalSatetPage1/>}/>
+     <Routh path='/Reactmemo' element={<Reactmemopage/>}/>
+     <Route path='/Usecallback' element={<Usecallbackpage/>}/>
+     <Route path='/usememo' element={<Usememopage/>}/>
     </Routes>
     </BrowserRouter>
   )
