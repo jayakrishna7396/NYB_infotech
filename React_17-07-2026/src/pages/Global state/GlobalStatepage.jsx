@@ -4,7 +4,7 @@ import Header from "../../Components_17-07-2026/Global State Management Concepts
 
 
 
-function GlobalState() {
+function GlobalStatepage() {
   return (
       <ThemeProvider>
             <Header/>
@@ -13,4 +13,4 @@ function GlobalState() {
   )
 }
 
-export default GlobalState;
+export default GlobalStatepage;

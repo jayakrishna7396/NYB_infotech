@@ -15,16 +15,16 @@ function Button({ onClick }) {
 
 export default Button;
 
-import React from "react";
+// import React from "react";
 
-const Button = React.memo(function Button({ onClick }) {
-  console.log("Button component rendered");
+// const Button = React.memo(function Button({ onClick }) {
+//   console.log("Button component rendered");
 
-  return (
-    <button onClick={onClick}>
-      Click Me
-    </button>
-  );
-});
+//   return (
+//     <button onClick={onClick}>
+//       Click Me
+//     </button>
+//   );
+// });
 
-export default Button;
+// export default Button;

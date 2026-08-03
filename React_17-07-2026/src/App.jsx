@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Routes, Route } from 'react-router-dom'
+import {BrowserRouter,Routes, Route, Links } from 'react-router-dom'
 import ComponentsPage from './pages/components/ComponentsPage'
 import FragmentsPage from './pages/Fragments/FragmentsPage'
 import PropsPage from './pages/props/PropsPage'
@@ -18,7 +18,11 @@ import GlobalSatetPage1 from './global sate/GolobalSatePage1'
 import Reactmemopage from './pages/Reactmemo_29-07-2026/Reactmemopage'
 import Usecallback from './pages/usecallback/Usecallbackpage'
 import Usememopage from './pages/Usememo/Usememopage'
-
+import Reactportalpage from './pages/Reactportal_30-07-2026/Reactportapage'
+import Eventbindingpage from './pages/Eventbinding_30-07-2026/Eventbindiingpage'
+import ListrenduringPage from './pages/Listrenduring_31-07-2026/Listrenduringpage'
+import DestructingPage from './pages/Destructuring_31-07-2026/Destrucingpage'
+import LazyloadingPage from './pages/Lazyloading_31-07-2026/Lazyloadingpage'
 
 
 const App = () => {
@@ -47,7 +51,13 @@ const App = () => {
      <Routh path='/Reactmemo' element={<Reactmemopage/>}/>
      <Route path='/Usecallback' element={<Usecallbackpage/>}/>
      <Route path='/usememo' element={<Usememopage/>}/>
+     <Route path='/Reactportal'element={<Reactportalpage/>}/>
+     <Routh path='/Eventbinding' element={<Eventbindingpage/>}/>
+     <Routh path='/Listrenduriing' elemenet={<ListrenduringPage/>}/>
+     <Routh path='/Destructing' element={<DestructingPage/>}/>
+     <Routh path='/Lazyloading' element={<LazyloadingPage/>}/>
     </Routes>
+
     </BrowserRouter>
   )
 }
