@@ -14,7 +14,6 @@ import ApiStatusPage from './pages/ApiComponent/ApiStatuspage'
 import HocPage from './pages/Hoc_28-07-2026/Hocpage'
 import CustomHookpage from './pages/CustomHook/CustomHookpage'
 import Purecomponentpage from './pages/Purecomponent_29-07-2026/Purecomponentpage'
-import GlobalSatetPage1 from './global sate/GolobalSatePage1'
 import Reactmemopage from './pages/Reactmemo_29-07-2026/Reactmemopage'
 import Usecallback from './pages/usecallback/Usecallbackpage'
 import Usememopage from './pages/Usememo/Usememopage'
@@ -23,6 +22,8 @@ import Eventbindingpage from './pages/Eventbinding_30-07-2026/Eventbindiingpage'
 import ListrenduringPage from './pages/Listrenduring_31-07-2026/Listrenduringpage'
 import DestructingPage from './pages/Destructuring_31-07-2026/Destrucingpage'
 import LazyloadingPage from './pages/Lazyloading_31-07-2026/Lazyloadingpage'
+import Componentsjsxpage from './pages/Componentjsx_25-08-26/Componentsjsxpage'
+import FunctionalComponentspage from './pages/Components_25-08-2026/FunctionalComponentspage'
 
 
 const App = () => {
@@ -47,7 +48,6 @@ const App = () => {
      <Route path='/Hoc' element={<HocPage/>}/>
      <Route path='/customhook'element={<CustomHookpage/>}/>
      <Route path='/purecomponent'element={<Purecomponentpage/>}/>
-     <Route path='/globalstate' element={<GlobalSatetPage1/>}/>
      <Routh path='/Reactmemo' element={<Reactmemopage/>}/>
      <Route path='/Usecallback' element={<Usecallbackpage/>}/>
      <Route path='/usememo' element={<Usememopage/>}/>
@@ -56,6 +56,8 @@ const App = () => {
      <Routh path='/Listrenduriing' elemenet={<ListrenduringPage/>}/>
      <Routh path='/Destructing' element={<DestructingPage/>}/>
      <Routh path='/Lazyloading' element={<LazyloadingPage/>}/>
+     <Routh path='/FunctionComponents' element={<FunctionalComponentspage/>}/>
+     <Routh path='/Compoundsjsx' element={<Componentsjsxpage/>}/>
     </Routes>
 
     </BrowserRouter>
