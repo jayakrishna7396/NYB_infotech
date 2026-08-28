@@ -18,4 +18,4 @@ const Usecallbackpage = () => {
   )
 }
 
-export default  Usecallback
+export default  Usecallbackpage;

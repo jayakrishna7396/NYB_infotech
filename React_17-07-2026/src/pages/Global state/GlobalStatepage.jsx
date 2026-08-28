@@ -1,16 +1,13 @@
-import Home1 from "../../Components_17-07-2026/global sate/Home1";
-import ThemeProvider from "../../Components_17-07-2026/global sate/ThemeContext";
-import Header from "../../Components_17-07-2026/Global State Management Concepts/components/Header";
+import GlobalState from "../Components_17-07-2026/GlobalState/GlobalState.jsx";
 
-
-
-function GlobalStatepage() {
+const GlobalStatePage = () => {
   return (
-      <ThemeProvider>
-            <Header/>
-            <Home1/>
-          </ThemeProvider>
-  )
-}
+    <div>
+      <h1>GlobalStae</h1>
 
-export default GlobalStatepage;
+      <GlobalState />
+    </div>
+  );
+};
+
+export default GlobalStatePage;
