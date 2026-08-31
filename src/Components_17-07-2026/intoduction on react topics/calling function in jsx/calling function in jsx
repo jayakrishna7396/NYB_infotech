@@ -1,0 +1,35 @@
+You can create a function and call it inside JSX using {}.
+
+function getMessage() {
+  return "Welcome to React!";
+}
+
+function App() {
+  return (
+    <div>
+      <h1>{getMessage()}</h1>
+    </div>
+  );
+}
+
+export default App;
+Output:
+Welcome to React!
+
+Another example:
+
+function addNumbers() {
+  return 10 + 20;
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Result: {addNumbers()}</h1>
+    </div>
+  );
+}
+
+export default App;
+Output:
+Result: 30

@@ -1,0 +1,46 @@
+ React Folder Structure
+Your project will look like this:
+my-react-app
+│
+├── node_modules
+├── public
+├── src
+│   ├── assets
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── package-lock.json
+└── vite.config.js
+Important files
+src/App.jsx
+This is the main component.
+Example:
+
+function App() {
+  return (
+    <div>
+      <h1>Hello React</h1>
+      <p>My first React application</p>
+    </div>
+  );
+}
+
+export default App;
+src/main.jsx
+
+This connects your React application to the HTML page.
+
+Usually, Vite creates this file automatically.
+
+src/index.css
+
+Used for styling your application.
+
+Example:
+
+body {
+  font-family: Arial;
+  text-align: center;
+}

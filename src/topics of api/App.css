@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.user {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.flow {
+  text-align: center;
+  font-weight: bold;
+}

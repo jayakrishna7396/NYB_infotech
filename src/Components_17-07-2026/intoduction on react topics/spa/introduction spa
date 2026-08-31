@@ -1,0 +1,78 @@
+A Single Page Application (SPA) is a web application where the browser loads one main HTML page and the content changes dynamically without completely reloading the page.
+
+React is commonly used to build SPAs.
+
+For example:
+
+Home
+AboutSingle Page Application (SPA)
+Contact
+
+In a traditional website, clicking each page may reload a new HTML page.
+
+In a React SPA:
+
+Browser
+   ↓
+React Application
+   ↓
+Home → About → Contact
+
+The page can change without a full browser refresh.
+
+For multiple pages, React applications commonly use React Router.
+
+Simple Practice Project in VS Code
+
+You can create a simple project demonstrating these concepts.
+
+src/App.jsx
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>My React Application</h1>
+
+      <h2>Introduction to React</h2>
+
+      <p>React is a JavaScript library for building user interfaces.</p>
+
+      <h2>Counter Example</h2>
+
+      <p>Count: {count}</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default App;
+src/index.css
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+Run:
+
+npm run dev
+What you learned in this project:
+React → Created the UI
+Project Setup → Created a Vite React project
+Folder Structure → Used src and App.jsx
+React Ecosystem → Can add libraries when needed
+Virtual DOM → React updates the UI when state changes
+SPA → React applications can change content without full page reloads
+
+This is a good first React practice project for VS Code.

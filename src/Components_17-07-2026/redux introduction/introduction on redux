@@ -1,0 +1,12 @@
+Redux Introduction 
+Redux is a state management library used in React applications to store and manage global data in one central place.
+
+For example, if many components need the same data, Redux allows them to access and update that data easily.
+Simple Example
+Imagine a shopping application:
+Redux Store
+    │
+    ├── User Information
+    ├── Shopping Cart
+    ├── Products
+    └── Login Status

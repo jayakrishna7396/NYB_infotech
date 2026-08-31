@@ -1,0 +1,29 @@
+The Parent sends data to the Child using Props.
+
+Student.jsx
+function Student(props) {
+  return (
+    <div>
+      <h2>Student Name: {props.name}</h2>
+      <p>Course: {props.course}</p>
+    </div>
+     );
+}
+
+export default Student;
+App.jsx
+import Student from "./Student";
+
+function App() {
+  return (
+    <div>
+      <h1>Student Details</h1>
+
+      <Student
+        name="Jaya"
+        course="React"
+      />
+    </div>
+  );
+}
+export default App;

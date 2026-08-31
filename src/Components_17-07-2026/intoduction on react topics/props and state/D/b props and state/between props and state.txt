@@ -1,0 +1,8 @@
+
+difference between state and props
+Props	                                  State
+Data is passed from Parent to Child	      Data is managed inside a component
+Props are read-only	                      State can be changed
+Used to pass data	                       Used to manage changing data
+Child should not directly change props	   State changes using setter function
+Example: name="Jaya"	                   Example: count

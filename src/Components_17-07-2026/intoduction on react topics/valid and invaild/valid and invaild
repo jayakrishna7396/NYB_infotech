@@ -1,0 +1,40 @@
+valid
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </div>
+  );
+}
+
+export default App;
+
+The <h1> and <p> are inside one parent <div>.
+
+
+
+    
+Invalid JSX
+function App() {
+  return (
+    <h1>Hello</h1>
+    <p>Welcome</p>
+  );
+}
+
+export default App;
+
+This is invalid because JSX must return one parent element.
+
+Correct version:
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </div>
+     );
+}
+
+export default App;

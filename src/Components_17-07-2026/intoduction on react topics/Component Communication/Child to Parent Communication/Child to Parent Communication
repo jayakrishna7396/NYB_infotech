@@ -1,0 +1,43 @@
+A Child cannot directly change the Parent's state.
+
+Instead, the Parent gives a function (callback) to the Child.
+
+The Child calls that function to send data back to the Parent.
+
+<!-- Child.jsx
+function Child(props) {
+  return (
+    <div>
+      <button onClick={() => props.sendMessage("Hello Parent!")}>
+        Send Message
+      </button>
+    </div>
+  );
+}
+
+export default Child; -->
+
+
+App.jsx
+import { useState } from "react";
+import Child from "./Child";
+
+function App() {
+  const [message, setMessage] = useState("");
+
+  function receiveMessage(data) {
+    setMessage(data);
+  }
+
+  return (
+    <div>
+      <h1>Parent Component</h1>
+
+      <p>Message from Child: {message}</p>
+
+      <Child sendMessage={receiveMessage} />
+    </div>
+     );
+}
+
+export default App;

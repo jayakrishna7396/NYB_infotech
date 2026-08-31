@@ -1,0 +1,13 @@
+
+A component is a reusable part of a React application.
+
+For example:
+
+My React App
+│
+├── Header
+├── Home
+├── About
+└── Footer
+
+Each part can be a separate component

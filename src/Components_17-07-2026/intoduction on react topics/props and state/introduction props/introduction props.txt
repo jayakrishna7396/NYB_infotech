@@ -1,0 +1,34 @@
+Props are used to pass data from a Parent Component to a Child Component.
+
+Step 1: Create Student.jsx
+
+Inside the src folder, create:
+
+src
+├── App.jsx
+└── Student.jsx
+Student.jsx
+function Student(props) {
+  return (
+    <div>
+      <h2>Student Name: {props.name}</h2>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+  }
+
+export default Student;
+Step 2: Use Props in App.jsx
+import Student from "./Student";
+
+function App() {
+  return (
+    <div>
+      <h1>Student Details</h1>
+
+      <Student name="Jaya" age={22} />
+      <Student name="Rahul" age={21} />
+    </div>
+  );
+}
+

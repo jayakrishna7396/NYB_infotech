@@ -1,0 +1,77 @@
+Props Drilling means passing data through multiple components, even when the middle components don't need the data.
+Example:
+App
+ │
+ │ user
+ ↓
+Parent
+ │
+ │ user
+ ↓
+Child
+ │
+ │ user
+ ↓
+GrandChild
+
+App.jsx
+import Parent from "./Parent";
+
+function App() {
+  const user = "Jaya";
+
+  return (
+    <div>
+      <Parent user={user} />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+Parent.jsx
+import Child from "./Child";
+
+function Parent(props) {
+  return (
+    <div>
+      <h2>Parent</h2>
+
+      <Child user={props.user} />
+    </div>
+  );
+}
+
+export default Parent;
+
+
+Child.jsx
+import GrandChild from "./GrandChild";
+
+function Child(props) {
+  return (
+    <div>
+      <h3>Child</h3>
+
+      <GrandChild user={props.user} />
+    </div>
+  );
+}
+
+export default Child;
+
+GrandChild.jsx
+function GrandChild(props) {
+  return (
+    <div>
+      <h4>Grand Child</h4>
+
+      <p>User Name: {props.user}</p>
+    </div>
+  );
+}
+
+export default GrandChild;

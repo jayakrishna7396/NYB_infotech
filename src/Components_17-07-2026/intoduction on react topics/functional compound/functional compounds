@@ -1,0 +1,28 @@
+Functional Components
+
+A Functional Component is a JavaScript function that returns JSX.
+
+App.jsx
+function Welcome() {
+  return <h1>Welcome to React</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome />
+      <p>This is my React application.</p>
+    </div>
+  );
+}
+
+export default App;
+
+Here:
+
+Welcome → Functional Component
+App → Functional Component
+<Welcome /> → Using the component
+Output:
+Welcome to React
+This is my React application.
