@@ -1,4 +1,4 @@
-import GlobalState from "../Components_17-07-2026/GlobalState/GlobalState.jsx";
+import GlobalState from "../../Components_17-07-2026/GlobalState/GlobalState.jsx";
 
 const GlobalStatePage = () => {
   return (

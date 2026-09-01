@@ -21,5 +21,6 @@ function Parentmemo() {
   );
 }
 
+const Child = () => <div></div>;
 export default Parentmemo;
 

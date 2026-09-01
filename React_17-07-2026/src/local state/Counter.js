@@ -28,7 +28,6 @@ export default Counter;
 
 
 // Example 2: Input Box (Local State)
-import { useState } from "react";
 
 function Name() {
 
@@ -48,7 +47,7 @@ function Name() {
   );
 }
 
-export default Name;
+export { Name };
 
 
 // If the user types:

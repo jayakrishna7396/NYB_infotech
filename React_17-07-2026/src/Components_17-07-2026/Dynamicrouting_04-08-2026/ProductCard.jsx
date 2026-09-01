@@ -1,3 +1,4 @@
+import { Link, Outlet } from 'react-router-dom';
 import products from "../../data/products";
 
 function ProductCard({ product }) {

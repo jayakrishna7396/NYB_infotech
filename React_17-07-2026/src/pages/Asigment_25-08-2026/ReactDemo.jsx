@@ -1,4 +1,14 @@
+import React, { useState } from 'react';
 
+const UserList = ({ users }) => (
+  <div>
+    {users.map(user => (
+      <div key={user.id}>
+        <p>{user.name} - {user.age} - {user.city}</p>
+      </div>
+    ))}
+  </div>
+);
 
 function ReactDemo() {
   // State

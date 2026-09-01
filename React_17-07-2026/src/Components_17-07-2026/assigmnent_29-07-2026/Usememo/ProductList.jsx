@@ -1,4 +1,4 @@
-function ProductList({ products }) {
+function ProductList({ products = [] }) {
   console.log("Product List Rendered");
 
   return (
@@ -8,7 +8,7 @@ function ProductList({ products }) {
       {products.map((product) => (
         <div key={product.id}>
           <h3>{product.name}</h3>
-          <p>Price : ${product.price}</p>
+          <p>Price: ${product.price}</p>
         </div>
       ))}
     </div>

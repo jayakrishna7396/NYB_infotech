@@ -1,10 +1,31 @@
-const products = [
-  { id: 1, name: "Laptop", price: 800 },
-  { id: 2, name: "Mouse", price: 20 },
-  { id: 3, name: "Keyboard", price: 40 },
-  { id: 4, name: "Monitor", price: 250 },
-  { id: 5, name: "Mobile", price: 600 },
-  { id: 6, name: "Headphones", price: 80 },
-];
+import ProductList from "./ProductList";
 
-export default products;
+function App() {
+  const products = [
+    {
+      id: 1,
+      name: "Laptop",
+      price: 500
+    },
+    {
+      id: 2,
+      name: "Mobile",
+      price: 300
+    },
+    {
+      id: 3,
+      name: "Headphones",
+      price: 100
+    }
+  ];
+
+  return (
+    <div>
+      <h1>My Products</h1>
+
+      <ProductList products={products} />
+    </div>
+  );
+}
+
+export default App;

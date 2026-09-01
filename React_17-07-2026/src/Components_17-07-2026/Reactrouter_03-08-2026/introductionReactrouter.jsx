@@ -12,7 +12,7 @@
 // 7.Handle invalid URLs with a 404 page
 // 8.Navigate programmatically
 
-example
+// example
 import {
   BrowserRouter,
   Routes,

@@ -7,7 +7,7 @@ import Home from "../../Components_17-07-2026/miniproject_03-08-2026/Home"
 import Navbar from "../../Components_17-07-2026/miniproject_03-08-2026/Navbar"
 import Services from "../../Components_17-07-2026/miniproject_03-08-2026/Services"
 
-const BrowserroterpagePage = () => {
+const Browserrouterpage = () => {
   return (
     <div>
         <AboutScreen/>
@@ -22,4 +22,4 @@ const BrowserroterpagePage = () => {
   )
 }
 
-export default BrowserroterPage
+export default Browserrouterpage
