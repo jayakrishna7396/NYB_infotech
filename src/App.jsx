@@ -39,6 +39,13 @@ import MemoPage from './pages/ReactMemo_31-08-2026/Memopage'
 import ReactRouterpage from './pages/ReactRouter_31-08-2026/ReactRouterpage'
 import BrowserRouterpage from './pages/BrowserRouter_31-08-2026/BrowserRouterpage'
 import Routerpage from './pages/Router_31-08-2026/Routerpage'
+import DynamicRoutingpage from './pages/DynamicRouting_31-08-2026/DynamicRoutingpage'
+import ProtectedRouterpage from './pages/ProtectedRouter_31-08-2026/ProtectedRouterpage'
+import ControlledFormpage from './pages/ControlledForm_01-09-2026/ControlledFormPage'
+import UncontrolledForm from './components_25-08-2026/UncontrolledForm_01-09-2026/UncontrolledForm'
+import UncontrolledFormpage from './pages/UncontrolledForm_01-09-2026/UncontrolledFormpage'
+import FormHandlingpage from './pages/FormHandling_01-08-2026/FormHandlingpage'
+import FormValidationpage from './pages/FormValidation_01-09-2026/FormValidationpage'
 
 
 
@@ -89,6 +96,12 @@ const App = () => {
        <Route path='/ReactRouter' element={<ReactRouterpage/>}/>
        <Route path='/BrowserRouter' element={<BrowserRouterpage/>}/>
        <Route path ='/Router' element={<Routerpage/>}/>
+       <Route path='/DynamicRouter' element={<DynamicRoutingpage/>}/>
+       <Route path='/ProtectedRouter' element={<ProtectedRouterpage/>}/>
+       <Route path='/ControlledForm' element={<ControlledFormpage/>}/>
+       <Route path='/UncontrolledForm' element={<UncontrolledFormpage/>}/>
+       <Route path='/FormHandling' element={<FormHandlingpage/>}/>
+       <Route path='/FormValidation' element={<FormValidationpage/>}/>
       </Routes>
 
     </BrowserRouter>
