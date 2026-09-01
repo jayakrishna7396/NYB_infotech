@@ -6,7 +6,7 @@ function LazyLoadingPage() {
   return (
     <div>
       <h1>Lazy Loading Example</h1>
-
+<h3>Hello</h3>
       <Suspense fallback={<h2>Loading...</h2>}>
         <Profile />
       </Suspense>
