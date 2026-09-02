@@ -1,0 +1,32 @@
+const myPromise = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("Operation successful");
+    } else {
+        reject("Operation failed");
+    }
+});
+
+myPromise
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+//then
+    myPromise.then((result) => {
+    console.log(result);
+});
+
+//.catch
+myPromise.catch((error) => {
+    console.log(error);
+});
+
+//finally
+myPromise.finally(() => {
+    console.log("Promise completed");
+});
