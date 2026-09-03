@@ -1,5 +1,6 @@
 
 import React from 'react'
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ComponentsPage from './pages/components/ComponentsPage'
 import FragmentsPage from './pages/Fragments/FragmentsPage'
@@ -36,7 +37,6 @@ import CustomHookPage from './pages/CustomHook_31-08-2026/CustomHookPage'
 import UseMemoPage from './pages/UseMemo_31-08-2026/UseMemoPage'
 import UseCallbackPage from './pages/UseCallback_31-08-2026/UseCallbackpage'
 import MemoPage from './pages/ReactMemo_31-08-2026/Memopage'
-import ReactRouterpage from './pages/ReactRouter_31-08-2026/ReactRouterpage'
 import BrowserRouterpage from './pages/BrowserRouter_31-08-2026/BrowserRouterpage'
 import Routerpage from './pages/Router_31-08-2026/Routerpage'
 import DynamicRoutingpage from './pages/DynamicRouting_31-08-2026/DynamicRoutingpage'
@@ -46,7 +46,28 @@ import UncontrolledForm from './components_25-08-2026/UncontrolledForm_01-09-202
 import UncontrolledFormpage from './pages/UncontrolledForm_01-09-2026/UncontrolledFormpage'
 import FormHandlingpage from './pages/FormHandling_01-08-2026/FormHandlingpage'
 import FormValidationpage from './pages/FormValidation_01-09-2026/FormValidationpage'
-
+import DynamicFormpage from './pages/DynamicForm_01-09-2026/DynamicFormpage'
+import APIcallpage from './pages/APIcall_01-09-2026/APIcallpage'
+import FetchAPI from './components_25-08-2026/FetchAPI_01-09-2026/FetchAPI'
+import FetchAPIpage from './pages/FetchAPI_01-09-2026/FetchAPIpage'
+import QueryParamspage from './pages/QueryParams_01-09-2026/QueryParamsPage'
+import ErrorHandlingpage from './pages/ErrorHandling_01-09-2026/ErrorHandlingpage'
+import Loadingpage from './pages/Loading_01-09-2026/LoadingPage'
+import APIResponsepage from './pages/APIResponse_01-09-2026/APIResponsePage'
+import RegistrationFormpage from './pages/Registration_01-09-2026/RegistrationFormpage'
+import ProductSearchpage from './pages/ProductSearch_01-09-2026/ProductSearchpage'
+import ReactMemopage from './pages/ReactMemo_01-09-2026/Reactmemopage'
+import UseMemopage from './pages/UseMemo_01-09-2026/UseMemoPage'
+import UseCallbackpage from './pages/UseCallback_01-09-2026/UseCallbackPage'
+import LazyLoadingpage from './pages/LazyLoading_01-09-2026/LazyLoadingPage'
+import CodeSplittingpage from './pages/CodeSplitting_01-09-2026/CodeSplittingPage'
+import ContextAPIpage from './pages/ContextAPI_01-09-2026/ContextAPIpage'
+import UseReducerpage from './pages/UseReducer_01-09-2026/UseReducerPage'
+import ReactRouterpage from './pages/ReactRouter_01-09-2026/ReactRouterpage'
+import NestedRoutingpage from './pages/NestedRouting_02-09-2026/NestedRoutingpage'
+import LoginPage from './pages/ProtectedRoute_02-09-2026/LoginPage'
+import NotFoundpage from './pages/NotFound_02-09-2026/NotFoundpage'
+import ProtectedRoutingpage from './pages/ProtectedRoute_02-09-2026/ProtectedRoutingpage'
 
 
 const App = () => {
@@ -93,7 +114,6 @@ const App = () => {
        <Route path='/Reactmemo' element={<MemoPage/>}/>
        <Route path='/Usememo1' element={<UseMemoPage/>}/>
        <Route path='/Usecallback' element={<UseCallbackPage/>}/>
-       <Route path='/ReactRouter' element={<ReactRouterpage/>}/>
        <Route path='/BrowserRouter' element={<BrowserRouterpage/>}/>
        <Route path ='/Router' element={<Routerpage/>}/>
        <Route path='/DynamicRouter' element={<DynamicRoutingpage/>}/>
@@ -102,6 +122,27 @@ const App = () => {
        <Route path='/UncontrolledForm' element={<UncontrolledFormpage/>}/>
        <Route path='/FormHandling' element={<FormHandlingpage/>}/>
        <Route path='/FormValidation' element={<FormValidationpage/>}/>
+       <Route path='/DynamicForm' element={<DynamicFormpage/>}/>
+       <Route path='/APIcall' element={<APIcallpage/>}/>
+       <Route path='/FetchAPI' element={<FetchAPIpage/>}/>
+       <Route path='/QueryParams' element={<QueryParamspage/>}/>
+       <Route path='/ErrorHandling' element={<ErrorHandlingpage/>}/>
+       <Route path='/Loading' element={<Loadingpage/>}/>
+       <Route path='/APIReponse' element={<APIResponsepage/>}/>
+       <Route path='/RegistrationForm' element={<RegistrationFormpage/>}/>
+       <Route path='/ProductSearch' element={<ProductSearchpage/>}/>
+       <Route path='/ReactMemo' element={<ReactMemopage/>}/>
+       <Route path='/UseMemo' element={<UseMemopage/>}/>
+       <Route path='/UseCallback' element={<UseCallbackpage/>}/>
+       <Route path='/LazyLoading' element={<LazyLoadingpage/>}/>
+       <Route path='/CodeSplitting' element={<CodeSplittingpage/>}/>
+       <Route path='/ContextAPI' element={<ContextAPIpage/>}/>
+       <Route path='/UseReducer' element ={<UseReducerpage/>}/>
+       <Route path='/ReactRouter' element={<ReactRouterpage/>}/>
+       <Route path='/NestedRouting' element={<NestedRoutingpage/>}/>
+       <Route path='/Login' element={<LoginPage/>}/>
+       <Route path='/ProtectedRouting' element={<ProtectedRoutingpage/>}/>
+       <Route path='/NotFound' element={<NotFoundpage/>}/>
       </Routes>
 
     </BrowserRouter>
