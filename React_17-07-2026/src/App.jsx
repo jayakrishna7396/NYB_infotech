@@ -68,25 +68,6 @@ import NestedRoutingpage from './pages/NestedRouting_02-09-2026/NestedRoutingpag
 import LoginPage from './pages/ProtectedRoute_02-09-2026/LoginPage'
 import NotFoundpage from './pages/NotFound_02-09-2026/NotFoundpage'
 import ProtectedRoutingpage from './pages/ProtectedRoute_02-09-2026/ProtectedRoutingpage'
-import Callbackpage from './pages/CallbackFunction_02-09-2026/Callbackpage'
-import Hocpage from './pages/Hoc_02-09-2026/Hocpage'
-import FirstClassFunctionPage from './pages/FirstClassFunction_02-09-2026/FirstClassFunctionpage'
-import ClosurePage from './pages/Closure_02-9-2026/ClosurePage'
-import IIFEPage from './pages/IIFE_02-09-2026/IIFEPage'
-import PureImpurepage from './pages/PureImpureFunction_02-09-2026/PureImpurepage'
-import ObjectDestructuringPage from './pages/objectdestructuring_02-09-2026/ObjectDestructuringPage'
-import ObjectMethodsPage from './pages/objectmethods_02-09-2026/ObjectMethodsPage'
-import ObjectKeysPage from './pages/objectkeys_02-09-2026/ObjectKeysPage'
-import ObjectValuesPage from './pages/Objectvalues_02-09-2026/ObjectValuesPage'
-import ObjectEntriesPage from './pages/objectentries_02-09-2026/ObjectEntriesPage'
-import ObjectAssignpage from './pages/objectassign_02-09-2026/ObjectAssignpage'
-import OptionalChainingPage from './pages/optionalchaining_02-09-2026/OptionalChainingPage'
-import NullishCoalescingPage from './pages/nullishcoalescing_02-09-2026/NullishCoalescingPage'
-import SpreadAndRestPage from './pages/spreadandrest_02-09-2026/SpreadAndRest'
-
-
-
-
 
 
 const App = () => {
@@ -162,21 +143,6 @@ const App = () => {
        <Route path='/Login' element={<LoginPage/>}/>
        <Route path='/ProtectedRouting' element={<ProtectedRoutingpage/>}/>
        <Route path='/NotFound' element={<NotFoundpage/>}/>
-       <Route path='/Callback' element={<Callbackpage/>}/>
-       <Route path='/Hoc' element={<Hocpage/>}/>
-       <Route path='/FirstClassFunction' element={<FirstClassFunctionPage/>}/>
-       <Route path='/Closure' element={<ClosurePage/>}/>
-       <Route path='/IIFE' element={<IIFEPage/>}/>
-       <Route path='/PureImpure' element={<PureImpurepage/>}/>
-       <Route path='/ObjectDestructing' element={<ObjectDestructuringPage/>}/>
-       <Route path='/ObjectMethods' element={<ObjectMethodsPage/>}/>
-       <Route path='/ObjectKeys' element={<ObjectKeysPage/>}/>
-       <Route path='/ObjectValues' element={<ObjectValuesPage/>}/>
-       <Route path='/ObjectEntries' element={<ObjectEntriesPage/>}/>
-       <Route path='/ObjectAssign' element={<ObjectAssignpage/>}/>
-       <Route path='/OptionalChaining' element={<OptionalChainingPage/>}/>
-       <Route path='/NullishCoalescing' element={<NullishCoalescingPage/>}/>
-       <Route path='/SpreadAndRest' element={<SpreadAndRestPage/>}/>
       </Routes>
 
     </BrowserRouter>

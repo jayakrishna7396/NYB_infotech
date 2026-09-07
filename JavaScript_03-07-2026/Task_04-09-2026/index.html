@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">User Manager</h1>
+
+    <!-- Form -->
+    <form id="userForm">
+
+        <input
+            type="text"
+            id="nameInput"
+            placeholder="Enter name"
+        >
+
+        <input
+            type="email"
+            id="emailInput"
+            placeholder="Enter email"
+        >
+
+        <button type="submit">
+            Add User
+        </button>
+
+    </form>
+
+    <br>
+
+    <button id="loadBtn">
+        Load Users From API
+    </button>
+
+    <p id="message"></p>
+
+    <ul id="userList"></ul>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
