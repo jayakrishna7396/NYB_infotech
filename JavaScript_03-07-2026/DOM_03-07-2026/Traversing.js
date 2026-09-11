@@ -9,10 +9,10 @@ console.log("inner h1 clicked")
 }
 child.addEventListener("click",action)
 
-let parent=document.getElementById("outertext")
-function action1(){
-    console.log("outertext")}
-parent.addEventListener("click",action1)
+// let parent=document.getElementById("outertext")
+// function action1(){
+//     console.log("outertext")}
+// parent.addEventListener("click",action1)
 
 let div=document.getElementById("div")
 function action2(){
@@ -38,8 +38,8 @@ function listclick(){
 }
 list.addEventListener("click",listclick)
 
-let parent = document.getElementById("parent");
-let child = document.getElementById("child");
+// let parent = document.getElementById("parent");
+// let child = document.getElementById("child");
 
 parent.addEventListener("click", function () {
   console.log("Parent Div Clicked");
