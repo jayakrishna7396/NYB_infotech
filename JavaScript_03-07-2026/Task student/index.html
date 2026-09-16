@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management App</title>
+</head>
+
+<body>
+
+    <h1>Student Management App</h1>
+
+    <!-- Student Form -->
+    <form id="studentForm">
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter student name"
+            required
+        >
+
+        <input
+            type="number"
+            id="studentMarks"
+            placeholder="Enter marks"
+            required
+        >
+
+        <button type="submit">
+            Add Student
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Student List</h2>
+
+    <ul id="studentList"></ul>
+
+    <button id="clearBtn">
+        Clear Students
+    </button>
+
+    <hr>
+
+    <h2>API Data</h2>
+
+    <button id="apiBtn">
+        Fetch Users
+    </button>
+
+    <p id="loading"></p>
+
+    <ul id="apiList"></ul>
+
+    <p id="errorMessage"></p>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
