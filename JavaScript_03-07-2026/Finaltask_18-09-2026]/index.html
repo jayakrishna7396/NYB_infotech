@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript API Application</title>
+</head>
+
+<body>
+
+    <h1>User Management App</h1>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search users..."
+    >
+
+    <!-- Filter -->
+    <select id="filterInput">
+        <option value="all">All Users</option>
+        <option value="krishna">Krishna</option>
+        <option value="rahul">Rahul</option>
+    </select>
+
+    <button id="loadBtn">Load Users</button>
+
+    <button id="addBtn">Add User</button>
+
+    <p id="message"></p>
+
+    <div id="loading">
+        Loading users...
+    </div>
+
+    <div id="userList"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
