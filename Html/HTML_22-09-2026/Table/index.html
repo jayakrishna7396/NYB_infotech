@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tables</title>
+</head>
+<body>
+
+    <h1>HTML Table</h1>
+
+    <!-- Table
+    Used to display data in rows and columns -->
+
+    <table border="1">
+
+        <!-- Table Caption
+        Gives a title to the table -->
+
+        <caption>Student Details</caption>
+
+        <!-- Table Row
+        Creates a row -->
+
+        <tr>
+
+            <!-- Table Header
+            Creates a heading cell -->
+
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+
+        </tr>
+
+        <tr>
+
+            <!-- Table Data
+            Creates a normal data cell -->
+
+            <td>Krishna</td>
+            <td>22</td>
+            <td>React</td>
+
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>23</td>
+            <td>JavaScript</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Colspan Example</h2>
+
+    <!-- Colspan
+    Combines two or more columns -->
+
+    <table border="1">
+
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td>Krishna</td>
+        </tr>
+
+        <tr>
+            <td>Course</td>
+            <td>React</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Rowspan Example</h2>
+
+    <!-- Rowspan
+    Combines two or more rows -->
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Krishna</td>
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
