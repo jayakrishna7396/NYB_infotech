@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced HTML</title>
+
+</head>
+
+<body>
+
+    <h1>Advanced HTML</h1>
+
+
+    <!-- Form Validation -->
+
+    <h2>1. Form Validation</h2>
+
+    <!--
+        Form Validation:
+        Used to check whether the user
+        entered valid information.
+
+        required  -> Field cannot be empty
+        minlength -> Minimum characters
+        maxlength -> Maximum characters
+        type      -> Specifies input type
+    -->
+
+    <form>
+
+        <label for="name">Name:</label>
+
+        <input
+            type="text"
+            id="name"
+            required
+            minlength="3"
+        >
+
+        <br><br>
+
+
+        <label for="email">Email:</label>
+
+        <input
+            type="email"
+            id="email"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="password">Password:</label>
+
+        <input
+            type="password"
+            id="password"
+            required
+            minlength="6"
+        >
+
+        <br><br>
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    <!-- Label -->
+
+    <h2>2. Label</h2>
+
+    <!--
+        Label:
+        Gives a name or description
+        to an input field.
+    -->
+
+    <label for="username">Username:</label>
+
+    <input type="text" id="username">
+
+
+    <h3>Checkbox with Label</h3>
+
+    <input type="checkbox" id="html">
+
+    <label for="html">HTML</label>
+
+    <br>
+
+
+    <input type="checkbox" id="css">
+
+    <label for="css">CSS</label>
+
+    <br>
+
+
+    <input type="checkbox" id="javascript">
+
+    <label for="javascript">JavaScript</label>
+
+
+    <!-- Fieldset -->
+
+    <h2>3. Fieldset</h2>
+
+    <!--
+        Fieldset:
+        Groups related form elements together.
+    -->
+
+    <fieldset>
+
+        <label for="firstname">First Name:</label>
+
+        <input type="text" id="firstname">
+
+        <br><br>
+
+
+        <label for="lastname">Last Name:</label>
+
+        <input type="text" id="lastname">
+
+    </fieldset>
+
+
+    <!-- Legend -->
+
+    <h2>4. Legend</h2>
+
+    <!--
+        Legend:
+        Provides a title or caption
+        for a fieldset.
+    -->
+
+    <fieldset>
+
+        <legend>Personal Information</legend>
+
+
+        <label for="age">Age:</label>
+
+        <input type="number" id="age">
+
+        <br><br>
+
+
+        <label for="phone">Phone:</label>
+
+        <input type="tel" id="phone">
+
+    </fieldset>
+
+
+    <!-- Iframe -->
+
+    <h2>5. Iframe</h2>
+
+    <!--
+        Iframe:
+        Displays another webpage
+        inside the current webpage.
+    -->
+
+    <iframe
+        src="https://www.example.com"
+        width="500"
+        height="300"
+        title="Example Website">
+    </iframe>
+
+
+    <!-- HTML5 Semantic Elements -->
+
+    <h2>6. HTML5 Semantic Elements</h2>
+
+    <!--
+        Semantic Elements:
+        Elements that clearly describe
+        their purpose.
+
+        header  -> Top section
+        nav     -> Navigation
+        main    -> Main content
+        section -> Section of content
+        article -> Independent content
+        aside   -> Side content
+        footer  -> Bottom section
+    -->
+
+
+    <header>
+
+        <h3>My Website</h3>
+
+    </header>
+
+
+    <nav>
+
+        <a href="#">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+
+    <main>
+
+        <section>
+
+            <h3>About HTML</h3>
+
+            <p>
+                HTML is used to create
+                the structure of web pages.
+            </p>
+
+        </section>
+
+
+        <article>
+
+            <h3>HTML Article</h3>
+
+            <p>
+                HTML5 provides semantic elements
+                for better page structure.
+            </p>
+
+        </article>
+
+
+        <aside>
+
+            <h3>Related Information</h3>
+
+            <p>
+                Learn more about HTML.
+            </p>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Copyright 2026
+        </p>
+
+    </footer>
+
+
+    <!-- Figure -->
+
+    <h2>7. Figure</h2>
+
+    <!--
+        Figure:
+        Used to contain self-contained content
+        such as an image, diagram, or chart.
+    -->
+
+    <figure>
+
+        <img
+            src="https://via.placeholder.com/300"
+            alt="Sample image"
+            width="300"
+        >
+
+    </figure>
+
+
+    <!-- Figcaption -->
+
+    <h2>8. Figcaption</h2>
+
+    <!--
+        Figcaption:
+        Provides a caption or description
+        for the content inside figure.
+    -->
+
+    <figure>
+
+        <img
+            src="https://via.placeholder.com/300"
+            alt="Sample image"
+            width="300"
+        >
+
+
+        <figcaption>
+
+            Figure 1: Sample Image
+
+        </figcaption>
+
+    </figure>
+
+
+    <!-- Details -->
+
+    <h2>9. Details</h2>
+
+    <!--
+        Details:
+        Creates expandable and
+        collapsible content.
+    -->
+
+    <details>
+
+        <p>
+            HTML stands for HyperText
+            Markup Language.
+        </p>
+
+    </details>
+
+
+    <!-- Summary -->
+
+    <h2>10. Summary</h2>
+
+    <!--
+        Summary:
+        Provides the clickable heading
+        for the details element.
+    -->
+
+    <details>
+
+        <summary>What is HTML?</summary>
+
+        <p>
+            HTML stands for HyperText
+            Markup Language.
+
+            It is used to create the
+            structure of web pages.
+        </p>
+
+    </details>
+
+
+    <br>
+
+
+    <details>
+
+        <summary>What is CSS?</summary>
+
+        <p>
+            CSS stands for Cascading
+            Style Sheets.
+
+            It is used to style
+            web pages.
+        </p>
+
+    </details>
+
+
+</body>
+
+</html>

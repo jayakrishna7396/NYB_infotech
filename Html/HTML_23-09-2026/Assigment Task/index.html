@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced HTML Assigned Tasks</title>
+
+</head>
+
+<body>
+
+    <h1>Advanced HTML Assigned Tasks</h1>
+
+
+    <!--
+        1. CREATE FORMS USING DIFFERENT INPUT TYPES
+    -->
+
+    <h2>1. Different Input Types</h2>
+
+    <form>
+
+        <!-- Text -->
+
+        <label for="name">Name:</label>
+
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+
+        <!-- Email -->
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+
+        <!-- Password -->
+
+        <label for="password">Password:</label>
+
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+
+        <!-- Number -->
+
+        <label for="age">Age:</label>
+
+        <input type="number" id="age" name="age">
+
+        <br><br>
+
+
+        <!-- Date -->
+
+        <label for="dob">Date of Birth:</label>
+
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+
+
+        <!-- Time -->
+
+        <label for="time">Preferred Time:</label>
+
+        <input type="time" id="time" name="time">
+
+        <br><br>
+
+
+        <!-- Telephone -->
+
+        <label for="phone">Phone:</label>
+
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+
+        <!-- URL -->
+
+        <label for="website">Website:</label>
+
+        <input type="url" id="website" name="website">
+
+        <br><br>
+
+
+        <!-- Color -->
+
+        <label for="color">Choose Color:</label>
+
+        <input type="color" id="color" name="color">
+
+        <br><br>
+
+
+        <!-- Range -->
+
+        <label for="range">Experience:</label>
+
+        <input type="range" id="range" name="range" min="1" max="10">
+
+        <br><br>
+
+
+        <!-- Search -->
+
+        <label for="search">Search:</label>
+
+        <input type="search" id="search" name="search">
+
+        <br><br>
+
+
+        <!-- Hidden -->
+
+        <input type="hidden" name="userId" value="101">
+
+
+    </form>
+
+
+    <!--
+        2. HTML5 FORM VALIDATION
+    -->
+
+    <h2>2. HTML5 Form Validation</h2>
+
+    <!--
+        required  -> Field is required
+        minlength -> Minimum characters
+        maxlength -> Maximum characters
+        min       -> Minimum number
+        max       -> Maximum number
+        pattern   -> Checks a specific format
+    -->
+
+    <form>
+
+        <label for="fullName">Full Name:</label>
+
+        <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            minlength="3"
+            maxlength="30"
+        >
+
+        <br><br>
+
+
+        <label for="userEmail">Email:</label>
+
+        <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="userAge">Age:</label>
+
+        <input
+            type="number"
+            id="userAge"
+            name="userAge"
+            required
+            min="18"
+            max="60"
+        >
+
+        <br><br>
+
+
+        <label for="userPassword">Password:</label>
+
+        <input
+            type="password"
+            id="userPassword"
+            name="userPassword"
+            required
+            minlength="6"
+        >
+
+        <br><br>
+
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+
+    <!--
+        3. FIELDSET AND LEGEND
+    -->
+
+    <h2>3. Fieldset and Legend</h2>
+
+    <!--
+        fieldset:
+        Groups related form fields.
+
+        legend:
+        Gives a title to the fieldset.
+    -->
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+
+            <label for="firstName">First Name:</label>
+
+            <input type="text" id="firstName">
+
+            <br><br>
+
+
+            <label for="lastName">Last Name:</label>
+
+            <input type="text" id="lastName">
+
+            <br><br>
+
+
+            <label for="personalEmail">Email:</label>
+
+            <input type="email" id="personalEmail">
+
+        </fieldset>
+
+
+        <br>
+
+
+        <fieldset>
+
+            <legend>Address Information</legend>
+
+
+            <label for="city">City:</label>
+
+            <input type="text" id="city">
+
+            <br><br>
+
+
+            <label for="pincode">Pincode:</label>
+
+            <input type="text" id="pincode">
+
+        </fieldset>
+
+    </form>
+
+
+    <!--
+        4. DROPDOWN
+    -->
+
+    <h2>4. Dropdown</h2>
+
+    <!--
+        select:
+        Creates a dropdown list.
+
+        option:
+        Creates an option inside dropdown.
+    -->
+
+    <label for="course">Choose Course:</label>
+
+    <select id="course" name="course">
+
+        <option value="">Select Course</option>
+
+        <option value="html">HTML</option>
+
+        <option value="css">CSS</option>
+
+        <option value="javascript">JavaScript</option>
+
+        <option value="react">React</option>
+
+    </select>
+
+
+    <!--
+        5. RADIO BUTTONS
+    -->
+
+    <h2>5. Radio Buttons</h2>
+
+    <!--
+        Radio buttons allow the user
+        to select only one option.
+
+        All radio buttons should have
+        the same name.
+    -->
+
+    <input
+        type="radio"
+        id="male"
+        name="gender"
+        value="male"
+    >
+
+    <label for="male">Male</label>
+
+
+    <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+    >
+
+    <label for="female">Female</label>
+
+
+    <input
+        type="radio"
+        id="other"
+        name="gender"
+        value="other"
+    >
+
+    <label for="other">Other</label>
+
+
+    <!--
+        6. CHECKBOXES
+    -->
+
+    <h2>6. Checkboxes</h2>
+
+    <!--
+        Checkboxes allow the user
+        to select multiple options.
+    -->
+
+    <input
+        type="checkbox"
+        id="htmlSkill"
+        name="skills"
+        value="html"
+    >
+
+    <label for="htmlSkill">HTML</label>
+
+    <br>
+
+
+    <input
+        type="checkbox"
+        id="cssSkill"
+        name="skills"
+        value="css"
+    >
+
+    <label for="cssSkill">CSS</label>
+
+    <br>
+
+
+    <input
+        type="checkbox"
+        id="jsSkill"
+        name="skills"
+        value="javascript"
+    >
+
+    <label for="jsSkill">JavaScript</label>
+
+    <br>
+
+
+    <input
+        type="checkbox"
+        id="reactSkill"
+        name="skills"
+        value="react"
+    >
+
+    <label for="reactSkill">React</label>
+
+
+    <!--
+        7. FILE INPUT
+    -->
+
+    <h2>7. File Input</h2>
+
+    <!--
+        type="file":
+        Allows the user to select a file
+        from their computer.
+    -->
+
+    <label for="resume">Upload Resume:</label>
+
+    <input
+        type="file"
+        id="resume"
+        name="resume"
+    >
+
+
+    <!--
+        8. IFRAME
+    -->
+
+    <h2>8. Iframe</h2>
+
+    <!--
+        iframe:
+        Embeds another webpage or external
+        content inside the current webpage.
+    -->
+
+    <iframe
+        src="https://www.example.com"
+        width="500"
+        height="300"
+        title="Example Website">
+    </iframe>
+
+
+    <!--
+        9. SEMANTIC HTML5 ELEMENTS
+    -->
+
+    <h2>9. Semantic HTML5 Elements</h2>
+
+    <!--
+        header  -> Header/top section
+        nav     -> Navigation links
+        main    -> Main content
+        section -> A section of content
+        article -> Independent content
+        aside   -> Related/side content
+        footer  -> Bottom section
+    -->
+
+
+    <header>
+
+        <h2>My Website</h2>
+
+        <p>Welcome to my website</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="#">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Services</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+
+    <main>
+
+        <section>
+
+            <h3>About HTML</h3>
+
+            <p>
+                HTML is used to create the
+                structure of web pages.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h3>HTML Forms</h3>
+
+            <p>
+                Forms are used to collect
+                information from users.
+            </p>
+
+        </section>
+
+
+        <article>
+
+            <h3>HTML5</h3>
+
+            <p>
+                HTML5 provides semantic elements
+                and modern form features.
+            </p>
+
+        </article>
+
+
+        <aside>
+
+            <h3>Related Information</h3>
+
+            <p>
+                HTML, CSS and JavaScript are
+                commonly used for web development.
+            </p>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Copyright 2026 My Website
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

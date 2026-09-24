@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form Attributes</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <!--
+        action:
+        Specifies where the form data will be sent.
+    -->
+
+    <!--
+        method:
+        Specifies how the form data will be sent.
+        Common methods are GET and POST.
+    -->
+
+    <form action="success.html" method="post">
+
+        <!--
+            name:
+            Gives a name to the form input.
+        -->
+
+        <!--
+            value:
+            Specifies the value of an input.
+        -->
+
+        <!--
+            placeholder:
+            Displays a hint inside the input field.
+        -->
+
+        <!--
+            required:
+            Makes the input field mandatory.
+        -->
+
+        <label>Name:</label>
+
+        <input
+            type="text"
+            name="username"
+            value=""
+            placeholder="Enter your name"
+            required
+        >
+
+        <br><br>
+
+
+        <!--
+            name:
+            Identifies the email field.
+            
+            placeholder:
+            Shows a hint to the user.
+            
+            required:
+            User must enter an email.
+        -->
+
+        <label>Email:</label>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <br><br>
+
+
+        <!--
+            min:
+            Specifies the minimum allowed number.
+            
+            max:
+            Specifies the maximum allowed number.
+        -->
+
+        <label>Age:</label>
+
+        <input
+            type="number"
+            name="age"
+            min="18"
+            max="60"
+        >
+
+        <br><br>
+
+
+        <!--
+            maxlength:
+            Specifies the maximum number of characters
+            that can be entered.
+        -->
+
+        <label>Username:</label>
+
+        <input
+            type="text"
+            name="username2"
+            placeholder="Maximum 10 characters"
+            maxlength="10"
+        >
+
+        <br><br>
+
+
+        <!--
+            readonly:
+            The user can see the value but cannot edit it.
+        -->
+
+        <label>Country:</label>
+
+        <input
+            type="text"
+            name="country"
+            value="India"
+            readonly
+        >
+
+        <br><br>
+
+
+        <!--
+            disabled:
+            Makes the input inactive.
+            The user cannot interact with it.
+        -->
+
+        <label>Student ID:</label>
+
+        <input
+            type="text"
+            name="studentId"
+            value="STU001"
+            disabled
+        >
+
+        <br><br>
+
+
+        <!--
+            pattern:
+            Specifies the format that the input must follow.
+            
+            [0-9] means any digit from 0 to 9.
+            {10} means exactly 10 digits.
+        -->
+
+        <label>Phone Number:</label>
+
+        <input
+            type="text"
+            name="phone"
+            placeholder="Enter 10 digit number"
+            pattern="[0-9]{10}"
+            required
+        >
+
+        <br><br>
+
+
+        <!--
+            value:
+            Specifies the text displayed on the submit button.
+        -->
+
+        <input
+            type="submit"
+            value="Submit"
+        >
+
+    </form>
+
+</body>
+
+</html>

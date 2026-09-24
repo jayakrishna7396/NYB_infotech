@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Form</title>
+
+</head>
+
+<body>
+
+    <h1>Job Application Form</h1>
+
+
+    <form>
+
+
+        <!-- Personal Details -->
+
+        <fieldset>
+
+            <legend>Personal Details</legend>
+
+
+            <label for="firstName">
+                First Name:
+            </label>
+
+            <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                minlength="2"
+            >
+
+            <br><br>
+
+
+            <label for="lastName">
+                Last Name:
+            </label>
+
+            <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                minlength="2"
+            >
+
+            <br><br>
+
+
+            <label for="dob">
+                Date of Birth:
+            </label>
+
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+                required
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Contact Details -->
+
+        <fieldset>
+
+            <legend>Contact Details</legend>
+
+
+            <label for="email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="phone">
+                Phone:
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                pattern="[0-9]{10}"
+                title="Enter a 10-digit phone number"
+            >
+
+            <br><br>
+
+
+            <label for="address">
+                Address:
+            </label>
+
+            <br>
+
+            <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="40"
+                required
+            ></textarea>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Education -->
+
+        <fieldset>
+
+            <legend>Education</legend>
+
+
+            <label for="qualification">
+                Highest Qualification:
+            </label>
+
+            <select
+                id="qualification"
+                name="qualification"
+                required
+            >
+
+                <option value="">
+                    Select Qualification
+                </option>
+
+                <option value="10th">
+                    10th
+                </option>
+
+                <option value="intermediate">
+                    Intermediate
+                </option>
+
+                <option value="diploma">
+                    Diploma
+                </option>
+
+                <option value="degree">
+                    Degree
+                </option>
+
+                <option value="btech">
+                    B.Tech
+                </option>
+
+                <option value="mtech">
+                    M.Tech
+                </option>
+
+                <option value="mba">
+                    MBA
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label for="college">
+                College / University:
+            </label>
+
+            <input
+                type="text"
+                id="college"
+                name="college"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="year">
+                Passing Year:
+            </label>
+
+            <input
+                type="number"
+                id="year"
+                name="year"
+                min="2000"
+                max="2026"
+                required
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Skills -->
+
+        <fieldset>
+
+            <legend>Skills</legend>
+
+
+            <p>Select your skills:</p>
+
+
+            <input
+                type="checkbox"
+                id="html"
+                name="skills"
+                value="html"
+            >
+
+            <label for="html">
+                HTML
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="css"
+                name="skills"
+                value="css"
+            >
+
+            <label for="css">
+                CSS
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="javascript"
+                name="skills"
+                value="javascript"
+            >
+
+            <label for="javascript">
+                JavaScript
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="react"
+                name="skills"
+                value="react"
+            >
+
+            <label for="react">
+                React
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="python"
+                name="skills"
+                value="python"
+            >
+
+            <label for="python">
+                Python
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Resume Upload -->
+
+        <fieldset>
+
+            <legend>Resume Upload</legend>
+
+
+            <label for="resume">
+                Upload Resume:
+            </label>
+
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc,.docx"
+                required
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Experience -->
+
+        <fieldset>
+
+            <legend>Experience</legend>
+
+
+            <label for="experience">
+                Years of Experience:
+            </label>
+
+            <input
+                type="number"
+                id="experience"
+                name="experience"
+                min="0"
+                max="40"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="company">
+                Previous Company:
+            </label>
+
+            <input
+                type="text"
+                id="company"
+                name="company"
+            >
+
+            <br><br>
+
+
+            <label for="role">
+                Previous Job Role:
+            </label>
+
+            <input
+                type="text"
+                id="role"
+                name="role"
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Gender -->
+
+        <fieldset>
+
+            <legend>Gender</legend>
+
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+            >
+
+            <label for="male">
+                Male
+            </label>
+
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+            >
+
+            <label for="female">
+                Female
+            </label>
+
+
+            <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+            >
+
+            <label for="other">
+                Other
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Location -->
+
+        <fieldset>
+
+            <legend>Location</legend>
+
+
+            <label for="country">
+                Country:
+            </label>
+
+            <select
+                id="country"
+                name="country"
+                required
+            >
+
+                <option value="">
+                    Select Country
+                </option>
+
+                <option value="india">
+                    India
+                </option>
+
+                <option value="usa">
+                    USA
+                </option>
+
+                <option value="uk">
+                    UK
+                </option>
+
+                <option value="canada">
+                    Canada
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label for="city">
+                City:
+            </label>
+
+            <input
+                type="text"
+                id="city"
+                name="city"
+                required
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Terms and Conditions -->
+
+        <fieldset>
+
+            <legend>Terms and Conditions</legend>
+
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+            >
+
+            <label for="terms">
+                I agree to the Terms and Conditions.
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Submit and Reset -->
+
+        <button type="submit">
+            Apply for Job
+        </button>
+
+
+        <button type="reset">
+            Reset
+        </button>
+
+
+    </form>
+
+
+</body>
+
+</html>
