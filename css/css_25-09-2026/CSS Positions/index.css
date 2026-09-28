@@ -1,0 +1,67 @@
+/* Static
+   Default position of an element.
+*/
+.static {
+    position: static;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+/* Relative
+   Moves an element from its normal position.
+*/
+.relative {
+    position: relative;
+    left: 30px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+
+/* Absolute
+   Positions an element relative to its parent.
+*/
+.parent {
+    position: relative;
+    height: 150px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.absolute {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: orange;
+    padding: 10px;
+}
+
+
+/* Fixed
+   Keeps an element in the same place on the screen.
+*/
+.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: pink;
+    padding: 10px;
+}
+
+
+/* Sticky
+   Stays at a position while scrolling.
+*/
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 10px;
+}
+
+
+/* Extra height for scrolling */
+.content {
+    height: 800px;
+}

@@ -1,0 +1,193 @@
+/* CSS Selectors
+   Selectors are used to select HTML elements and apply styles.
+*/
+
+
+/* Element Selector
+   Selects HTML elements by their tag name.
+*/
+p {
+    font-size: 18px;
+}
+
+
+/* Class Selector
+   Selects elements using a class name.
+*/
+.text {
+    color: blue;
+}
+
+
+/* ID Selector
+   Selects one element using an ID.
+*/
+#special {
+    color: green;
+}
+
+
+/* Universal Selector
+   Selects all HTML elements.
+*/
+* {
+    box-sizing: border-box;
+}
+
+
+/* Attribute Selector
+   Selects elements based on an attribute.
+*/
+input[type="text"] {
+    border: 2px solid purple;
+    padding: 8px;
+}
+
+
+/* Descendant Selector
+   Selects an element inside another element.
+*/
+div p {
+    color: brown;
+}
+
+
+/* Grouping Selector
+   Applies the same style to multiple selectors.
+*/
+.group h3,
+.group p {
+    font-family: Arial;
+}
+
+
+/* CSS Specificity
+   ID has higher specificity than class and element selectors.
+*/
+.specific-text {
+    color: orange;
+}
+
+#specific {
+    color: red;
+}
+
+
+/* Colors
+   Colors change the text or other element colors.
+*/
+.color-box {
+    color: white;
+    background-color: blue;
+    padding: 20px;
+}
+
+
+/* Background
+   Background styles the background of an element.
+*/
+.background-box {
+    background-color: lightgreen;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+/* Borders
+   Border creates a line around an element.
+*/
+.border-box {
+    border: 3px solid black;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+/* Spacing
+   Spacing can be created using margin and padding.
+*/
+.spacing-box {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* CSS Box Model
+   The box model contains:
+   Content → Padding → Border → Margin
+*/
+.box-model {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid green;
+    margin: 20px;
+    background-color: lightyellow;
+}
+
+
+/* Margin
+   Margin creates space outside an element.
+*/
+.margin-example {
+    border: 2px solid red;
+    margin: 30px;
+    background-color: lightpink;
+}
+
+
+/* Padding
+   Padding creates space inside an element.
+*/
+.padding-example {
+    border: 2px solid blue;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+
+/* Width and Height
+   Width controls horizontal size.
+   Height controls vertical size.
+*/
+.size-box {
+    width: 300px;
+    height: 100px;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+
+/* !important
+   !important gives a CSS rule very high priority.
+   It should be used only when really necessary.
+*/
+.important-text {
+    color: blue !important;
+    font-weight: bold;
+}
+
+
+/* General Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: darkblue;
+}

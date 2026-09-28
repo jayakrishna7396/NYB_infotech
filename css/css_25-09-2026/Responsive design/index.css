@@ -1,0 +1,96 @@
+/*
+Responsive Design:
+Responsive design makes a webpage
+work properly on different screen sizes.
+*/
+
+
+/*
+1. Media Queries
+Media queries apply different CSS
+based on screen size.
+*/
+
+.media-text {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .media-text {
+        background-color: lightgreen;
+    }
+}
+
+
+/*
+2. Mobile-first Design
+Mobile-first means designing for
+small screens first, then larger screens.
+*/
+
+.mobile-box {
+    width: 100%;
+    padding: 20px;
+    background-color: orange;
+}
+
+@media (min-width: 768px) {
+    .mobile-box {
+        width: 50%;
+    }
+}
+
+
+/*
+3. Breakpoints
+Breakpoints are screen sizes where
+the layout changes.
+*/
+
+.breakpoint {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .breakpoint {
+        font-size: 24px;
+    }
+}
+
+
+/*
+4. Responsive Images
+Responsive images adjust their size
+according to the screen.
+*/
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+5. Responsive Layouts
+Responsive layouts adjust the layout
+according to the screen size.
+*/
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.layout div {
+    flex: 1 1 200px;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,73 @@
+/*
+CSS Alignment:
+Alignment is used to position elements
+in a specific direction.
+*/
+
+
+/*
+1. Horizontal Alignment
+Horizontal alignment moves content
+left, center, or right.
+*/
+
+.horizontal {
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
+/*
+2. Vertical Alignment
+Vertical alignment positions content
+from top to bottom.
+*/
+
+.vertical {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+
+/*
+3. Flex Alignment
+Flex alignment uses justify-content
+and align-items to position flex items.
+*/
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.flex div {
+    background-color: orange;
+    padding: 20px;
+}
+
+
+/*
+4. Grid Alignment
+Grid alignment uses properties such as
+justify-items and align-items.
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid div {
+    background-color: pink;
+    padding: 20px;
+}

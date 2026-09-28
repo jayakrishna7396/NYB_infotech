@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Specificity, Colors, Backgrounds and Borders</title>
+
+    <style>
+        /* CSS Specificity */
+
+        p {
+            color: blue;
+        }
+
+        .text {
+            color: green;
+        }
+
+        #heading {
+            color: red;
+        }
+
+        /* Colors */
+        .color-example {
+            color: purple;
+        }
+
+        /* Background */
+        .background-example {
+            background-color: lightblue;
+        }
+
+        /* Border */
+        .border-example {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Specificity</h1>
+
+    <p class="text" id="paragraph">
+        This text demonstrates CSS Specificity.
+    </p>
+
+    <h2>Colors</h2>
+    <p class="color-example">This text has a color.</p>
+
+    <h2>Backgrounds</h2>
+    <p class="background-example">This element has a background color.</p>
+
+    <h2>Borders</h2>
+    <p class="border-example">This element has a border.</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

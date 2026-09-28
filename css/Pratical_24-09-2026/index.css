@@ -1,0 +1,252 @@
+/* 
+   Complete External CSS Stylesheet
+
+   Topics:
+   Typography
+   Colors
+   Spacing
+   Borders
+   Backgrounds
+   Form Styling
+   Table Styling
+   Button Styling
+*/
+
+
+/* Typography
+   Typography controls the appearance of text.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Colors
+   Colors can be applied to text and backgrounds.
+*/
+
+body {
+    color: #333333;
+    background-color: #f4f4f4;
+}
+
+
+/* Header */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #66ccff;
+}
+
+
+/* Main Content
+   Spacing creates space around elements.
+*/
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #1e3a5f;
+    border-bottom: 2px solid #1e3a5f;
+    padding-bottom: 8px;
+}
+
+
+/* Profile Image */
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #1e3a5f;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Skills */
+
+ul {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Table Styling
+   Tables can be styled using borders,
+   padding, colors and alignment.
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+
+/* Form Styling
+   Forms can be styled using width,
+   padding, borders and spacing.
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* Input Focus */
+
+input:focus,
+textarea:focus {
+    border-color: #1e3a5f;
+    outline: none;
+}
+
+
+/* Button Styling */
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162b45;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,34 @@
+/*
+Float:
+Float moves an element to the left or right
+and allows other content to flow around it.
+*/
+
+.float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+/*
+Clear:
+Clear prevents an element from appearing
+next to a floated element.
+*/
+
+.clear-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.clear-text {
+    clear: both;
+}

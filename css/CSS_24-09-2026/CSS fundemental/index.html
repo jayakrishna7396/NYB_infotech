@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Fundamentals</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .internal {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Element Selector -->
+    <h1>CSS Fundamentals</h1>
+
+    <!-- ID Selector -->
+    <h2 id="title">CSS Selectors</h2>
+
+    <!-- Class Selector -->
+    <p class="text">This is a class selector.</p>
+
+    <!-- Inline CSS -->
+    <p style="color: red;">This is Inline CSS.</p>
+
+    <!-- Internal CSS -->
+    <p class="internal">This is Internal CSS.</p>
+
+    <!-- Attribute Selector -->
+    <input type="text" placeholder="Enter your name">
+
+    <input type="email" placeholder="Enter your email">
+
+    <!-- Grouping Selector -->
+    <h3>Grouping Selector</h3>
+    <p>This paragraph uses grouping selector.</p>
+
+    <!-- Descendant Selector -->
+    <div class="parent">
+        <p>This is a descendant paragraph.</p>
+
+        <section>
+            <p>This is also a descendant paragraph.</p>
+        </section>
+    </div>
+
+    <!-- Child Selector -->
+    <div class="child-parent">
+        <p>Direct child paragraph.</p>
+
+        <section>
+            <p>Nested paragraph.</p>
+        </section>
+    </div>
+
+    <!-- Adjacent Sibling -->
+    <h3 class="adjacent">Adjacent Sibling</h3>
+    <p>This is the next paragraph.</p>
+    <p>This paragraph is not directly next to h3.</p>
+
+    <!-- General Sibling -->
+    <h3 class="general">General Sibling</h3>
+    <p>General sibling 1</p>
+    <p>General sibling 2</p>
+    <p>General sibling 3</p>
+
+</body>
+</html>

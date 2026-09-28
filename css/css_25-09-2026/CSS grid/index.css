@@ -1,0 +1,168 @@
+/*
+CSS Grid:
+CSS Grid is used to arrange elements
+in rows and columns.
+*/
+
+
+/*
+1. Grid Container
+A grid container is an element with
+display: grid.
+*/
+
+.container {
+    display: grid;
+    background-color: lightgray;
+}
+
+.container div {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/*
+2. Grid Columns
+Defines the number and size of columns.
+*/
+
+
+/*
+3. Grid Rows
+Defines the number and size of rows.
+*/
+
+.columns-rows {
+    display: grid;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 80px 80px;
+
+    background-color: lightgray;
+}
+
+.columns-rows div {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/*
+4. Gap
+Creates space between rows and columns.
+*/
+
+.gap {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 20px;
+}
+
+.gap div {
+    background-color: orange;
+    padding: 20px;
+}
+
+
+/*
+5. Grid Areas
+Grid areas give names to different
+parts of the grid.
+*/
+
+.areas {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+
+    gap: 5px;
+}
+
+.areas header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.areas nav {
+    grid-area: nav;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.areas main {
+    grid-area: main;
+    background-color: orange;
+    padding: 20px;
+}
+
+.areas footer {
+    grid-area: footer;
+    background-color: pink;
+    padding: 20px;
+}
+
+
+/*
+6. fr Unit
+fr means fraction of available space.
+*/
+
+.fr-example {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.fr-example div {
+    background-color: yellow;
+    padding: 20px;
+}
+
+
+/*
+7. repeat()
+repeat() is used to repeat
+columns or rows.
+*/
+
+.repeat-example {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.repeat-example div {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+
+/*
+8. minmax()
+minmax() sets a minimum and maximum size.
+*/
+
+.minmax-example {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(100px, 1fr));
+
+    gap: 10px;
+}
+
+.minmax-example div {
+    background-color: violet;
+    padding: 20px;
+}

@@ -1,0 +1,194 @@
+/*
+Flexbox:
+Flexbox is used to arrange elements
+in a row or column.
+*/
+
+
+/*
+1. Flex Container
+A flex container is an element with
+display: flex.
+*/
+
+.container {
+    display: flex;
+    background-color: lightgray;
+}
+
+.container div {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/*
+2. Flex Direction
+Controls the direction of flex items.
+*/
+
+.direction {
+    display: flex;
+    flex-direction: row;
+}
+
+.direction div {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/*
+3. Justify Content
+Controls the position of items
+along the main axis.
+*/
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify div {
+    background-color: orange;
+    padding: 20px;
+}
+
+
+/*
+4. Align Items
+Controls the position of items
+along the cross axis.
+*/
+
+.align {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.align div {
+    background-color: pink;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+/*
+5. Flex Wrap
+Allows items to move to a new line
+when there is not enough space.
+*/
+
+
+/*
+6. Align Content
+Controls the space between multiple
+flex lines.
+*/
+
+.wrap-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.wrap-content div {
+    width: 100px;
+    background-color: skyblue;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+/*
+7. Gap
+Creates space between flex items.
+*/
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+.gap div {
+    background-color: yellow;
+    padding: 20px;
+}
+
+
+/*
+8. Flex Grow
+Allows an item to grow and take
+available space.
+*/
+
+.flex-size {
+    display: flex;
+    width: 500px;
+}
+
+.grow {
+    flex-grow: 1;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
+/*
+9. Flex Shrink
+Allows an item to shrink when
+there is not enough space.
+*/
+
+.shrink {
+    flex-shrink: 1;
+    width: 300px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+
+/*
+10. Flex Basis
+Sets the initial size of a flex item.
+*/
+
+.basis {
+    flex-basis: 150px;
+    background-color: orange;
+    padding: 20px;
+}
+
+
+/*
+11. Order
+Changes the order of flex items.
+*/
+
+.order {
+    display: flex;
+}
+
+.order div {
+    padding: 20px;
+    margin: 5px;
+    background-color: pink;
+}
+
+.one {
+    order: 3;
+}
+
+.two {
+    order: 1;
+}
+
+.three {
+    order: 2;
+}

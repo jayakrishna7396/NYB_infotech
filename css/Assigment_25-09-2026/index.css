@@ -1,0 +1,438 @@
+/* 
+   CSS Layout Practice
+
+   Topics:
+   1. Flexbox
+   2. CSS Grid
+   3. Positioning
+   4. Z-Index
+   5. Responsive Design
+   6. Flexbox vs Grid
+*/
+
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #1e3a5f;
+}
+
+
+/* 1. FLEXBOX */
+
+/*
+   Flexbox creates a flexible layout.
+
+   display: flex;
+   makes the parent a flex container.
+*/
+
+.flex-container {
+    display: flex;
+
+    /* Controls direction */
+    flex-direction: row;
+
+    /* Horizontal alignment */
+    justify-content: space-between;
+
+    /* Vertical alignment */
+    align-items: center;
+
+    /* Space between items */
+    gap: 20px;
+
+    /* Allows items to move to next line */
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 150px;
+
+    background-color: #4caf50;
+    color: white;
+
+    padding: 30px;
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+
+/* 2. CSS GRID */
+
+/*
+   CSS Grid creates rows and columns.
+*/
+
+.grid-container {
+    display: grid;
+
+    /* Creates 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Space between rows and columns */
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #2196f3;
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+
+/* 3. POSITIONING */
+
+/*
+   Static:
+   Default position of an element.
+*/
+
+.position-container {
+    position: relative;
+
+    min-height: 300px;
+
+    border: 2px solid #999;
+    padding: 20px;
+}
+
+.static-box {
+    position: static;
+
+    background-color: lightgray;
+
+    padding: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+/*
+   Relative:
+   Element stays in normal flow but
+   can be moved using top, left, etc.
+*/
+
+.relative-box {
+    position: relative;
+
+    left: 30px;
+
+    background-color: orange;
+
+    width: 150px;
+    padding: 20px;
+}
+
+
+/*
+   Absolute:
+   Positioned relative to the nearest
+   positioned parent.
+*/
+
+.absolute-box {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: purple;
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* 4. Z-INDEX */
+
+/*
+   z-index controls which element
+   appears in front.
+*/
+
+.overlap-container {
+    position: relative;
+
+    height: 250px;
+}
+
+.box-one {
+    position: absolute;
+
+    left: 100px;
+    top: 50px;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: red;
+
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-two {
+    position: absolute;
+
+    left: 170px;
+    top: 100px;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: blue;
+    color: white;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 5. STICKY */
+
+/*
+   Sticky behaves normally until
+   it reaches the given position.
+*/
+
+.sticky-box {
+    position: sticky;
+
+    top: 0;
+
+    background-color: #ff9800;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+
+/* Fixed */
+
+/*
+   Fixed keeps the element in the
+   same position on the screen.
+*/
+
+.fixed-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #1e3a5f;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* 6. RESPONSIVE LAYOUT */
+
+.responsive-container {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.responsive-box {
+    flex: 1;
+
+    min-width: 200px;
+
+    padding: 40px;
+
+    background-color: #009688;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+
+/* 7. FLEXBOX VS GRID */
+
+.comparison {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.comparison div {
+    padding: 20px;
+
+    background-color: #eeeeee;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+/*
+   When screen width is 600px or less,
+   the layout becomes mobile-friendly.
+*/
+
+@media (max-width: 600px) {
+
+    /* Navigation becomes vertical */
+
+    nav a {
+        display: block;
+
+        margin: 10px;
+    }
+
+
+    /* Flexbox items become vertical */
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+
+    /* Grid becomes one column */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Comparison becomes one column */
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Responsive boxes become full width */
+
+    .responsive-box {
+        width: 100%;
+    }
+
+
+    /* Smaller main width */
+
+    main {
+        width: 95%;
+    }
+}

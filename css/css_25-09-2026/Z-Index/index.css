@@ -1,0 +1,66 @@
+/*
+Z-Index:
+Z-index controls which element appears
+in front of or behind another element.
+*/
+
+/*
+Stacking Order:
+Stacking order means the order in which
+elements appear from front to back.
+
+Higher z-index = Front
+Lower z-index = Behind
+*/
+
+.box {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.box1 {
+    top: 150px;
+    left: 50px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.box2 {
+    top: 180px;
+    left: 100px;
+    background-color: lightgreen;
+    z-index: 2;
+}
+
+.box3 {
+    top: 210px;
+    left: 150px;
+    background-color: orange;
+    z-index: 3;
+}
+
+
+/*
+Positioning Context:
+Positioning context means the reference area
+used to position a child element.
+*/
+
+.parent {
+    position: relative;
+    margin-top: 300px;
+    width: 300px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.child {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 2;
+    background-color: pink;
+    padding: 20px;
+}

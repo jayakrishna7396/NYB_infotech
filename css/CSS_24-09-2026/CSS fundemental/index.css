@@ -1,0 +1,56 @@
+/* CSS Comment */
+
+/* Element Selector */
+h1 {
+    color: blue;
+}
+
+/* ID Selector */
+#title {
+    color: rgb(103, 228, 103);
+}
+
+/* Class Selector */
+.text {
+    font-size: 20px;
+    color: rgb(209, 150, 41);
+}
+
+/* Universal Selector */
+* {
+    font-family: Arial;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    background-color: rgb(206, 206, 34);
+}
+
+input[type="email"] {
+    background-color: rgb(24, 172, 221);
+}
+
+/* Grouping Selector */
+h3, p {
+    margin: 10px;
+}
+
+/* Descendant Selector */
+.parent p {
+    color: rgb(233, 16, 16);
+}
+
+/* Child Selector */
+.child-parent > p {
+    color: rgb(38, 235, 38);
+}
+
+/* Adjacent Sibling Selector */
+.adjacent + p {
+    color: rgb(161, 31, 31);
+}
+
+/* General Sibling Selector */
+.general ~ p {
+    color: rgb(167, 35, 167);
+}
