@@ -1,0 +1,28 @@
+/* Text Color */
+h1 {
+    color: blue;
+}
+
+/* Background Color */
+body {
+    background-color: lightgray;
+}
+
+/* Text Color */
+p {
+    color: green;
+}
+
+/* Background and Border */
+.box {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+}
+
+/* Background Image */
+.box {
+    background-image: url("background.jpg");
+    background-size: cover;
+}

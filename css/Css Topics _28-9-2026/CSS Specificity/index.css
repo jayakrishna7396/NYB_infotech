@@ -1,0 +1,22 @@
+/*
+CSS Specificity
+
+Specificity decides which CSS rule
+has higher priority when multiple
+rules target the same element.
+*/
+
+/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.text {
+    color: green;
+}
+
+/* ID selector */
+#message {
+    color: red;
+}

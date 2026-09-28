@@ -1,0 +1,53 @@
+/*
+CSS Attribute Selector
+
+An attribute selector is used to select HTML
+elements based on their attributes.
+*/
+
+
+/* 1. Select input with type="text" */
+
+input[type="text"] {
+    border: 2px solid rgb(36, 36, 228);
+    padding: 10px;
+}
+
+
+/* 2. Select input with type="email" */
+
+input[type="email"] {
+    border: 2px solid rgb(36, 214, 36);
+    padding: 10px;
+}
+
+
+/* 3. Select input with type="password" */
+
+input[type="password"] {
+    border: 2px solid rgb(241, 29, 29);
+    padding: 10px;
+}
+
+
+/* 4. Select elements that have required attribute */
+
+input[required] {
+    background-color: rgb(201, 201, 16);
+}
+
+
+/* 5. Select links with target="_blank" */
+
+a[target="_blank"] {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 6. Select elements with class="important" */
+
+p[class="important"] {
+    background-color: yellow;
+    padding: 10px;
+}

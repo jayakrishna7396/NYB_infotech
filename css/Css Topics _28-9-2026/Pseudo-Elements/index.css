@@ -1,0 +1,51 @@
+/*
+Pseudo-Elements
+
+A pseudo-element is used to style
+a specific part of an element.
+*/
+
+
+/* 1. ::before
+
+Adds content before the element content.
+*/
+
+.before-example::before {
+    content: "★ ";
+    color: orange;
+}
+
+
+/* 2. ::after
+
+Adds content after the element content.
+*/
+
+.after-example::after {
+    content: " ";
+    color: green;
+}
+
+
+/* 3. ::first-letter
+
+Styles the first letter of an element.
+*/
+
+.first-letter-example::first-letter {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 4. ::first-line
+
+Styles the first line of an element.
+*/
+
+.first-line-example::first-line {
+    color: blue;
+    font-weight: bold;
+}

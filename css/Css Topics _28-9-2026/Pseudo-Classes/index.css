@@ -1,0 +1,82 @@
+/*
+Pseudo-Class
+
+A pseudo-class is used to style an element
+based on its state or position.
+*/
+
+
+/* 1. :hover
+
+Applies when the mouse moves over an element.
+*/
+
+.hover-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/* 2. :focus
+
+Applies when an input receives focus.
+*/
+
+input:focus {
+    border: 3px solid green;
+    outline: none;
+}
+
+
+/* 3. :active
+
+Applies while the element is being clicked.
+*/
+
+.active-button:active {
+    background-color: red;
+    color: white;
+}
+
+
+/* 4. :visited
+
+Applies to a link after it has been visited.
+*/
+
+a:visited {
+    color: purple;
+}
+
+
+/* 5. :first-child
+
+Selects the first child of its parent.
+*/
+
+.first-list li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 6. :last-child
+
+Selects the last child of its parent.
+*/
+
+.last-list li:last-child {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* 7. :nth-child()
+
+Selects a child based on its position.
+*/
+
+.nth-list li:nth-child(3) {
+    color: blue;
+    background-color: lightblue;
+}

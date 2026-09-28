@@ -1,0 +1,20 @@
+body {
+    background-color: lightgray;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+
+    /* Border width */
+    border-width: 3px;
+
+    /* Border style */
+    border-style: solid;
+
+    /* Border color */
+    border-color: blue;
+
+    /* Rounded corners */
+    border-radius: 10px;
+}

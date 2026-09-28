@@ -1,0 +1,15 @@
+/*
+Descendant Selector
+
+A descendant selector selects elements
+that are inside another element.
+*/
+
+
+/* Select all p elements inside .container */
+
+.container p {
+    color: blue;
+    background-color: rgb(12, 8, 24);
+    padding: 10px;
+}

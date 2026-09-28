@@ -1,0 +1,13 @@
+/*
+CSS Inheritance
+
+Inheritance means that some CSS properties
+from a parent element are passed to its
+child elements.
+*/
+
+.parent {
+    color: blue;
+    font-family: Arial;
+    font-size: 20px;
+}

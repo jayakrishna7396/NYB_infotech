@@ -1,0 +1,34 @@
+/*
+CSS Variables
+
+CSS variables are custom values
+that can be reused in CSS.
+
+Syntax:
+
+--variable-name: value;
+*/
+
+/* Creating CSS Variables */
+:root {
+    --main-color: blue;
+    --text-color: white;
+    --box-padding: 20px;
+}
+
+/* Using CSS Variables */
+h1 {
+    color: var(--main-color);
+}
+
+.card {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: var(--box-padding);
+}
+
+button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+}

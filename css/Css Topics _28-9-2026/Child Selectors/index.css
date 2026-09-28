@@ -1,0 +1,13 @@
+/*
+Child Selector
+
+A child selector selects only the
+direct children of an element.
+*/
+
+
+.container > p {
+    color: red;
+    background-color: lightyellow;
+    padding: 10px;
+}

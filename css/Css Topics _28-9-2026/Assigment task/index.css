@@ -1,0 +1,142 @@
+/* CSS Variables */
+
+:root {
+    --main-color: blue;
+    --card-color: white;
+    --border-color: gray;
+}
+
+/* Basic Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 30px;
+}
+
+/* Attribute Selector */
+
+input[type="text"] {
+    border: 2px solid var(--main-color);
+    padding: 10px;
+}
+
+/* Descendant Selector */
+
+.container p {
+    color: green;
+}
+
+/* Child Selector */
+
+.container > p {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+
+h2 + p {
+    color: orange;
+}
+
+/* Styled Card */
+
+.card {
+    background-color: var(--card-color);
+    width: 300px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
+/* Pseudo-Class - Hover */
+
+.card button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Pseudo-Class - Active */
+
+.card button:active {
+    background-color: red;
+}
+
+/* Pseudo-Class - Visited */
+
+.card a:visited {
+    color: purple;
+}
+
+/* Pseudo-Class - Focus */
+
+form input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* First Child */
+
+li:first-child {
+    color: red;
+}
+
+/* Last Child */
+
+li:last-child {
+    color: green;
+}
+
+/* Nth Child */
+
+li:nth-child(2) {
+    color: blue;
+}
+
+/* Pseudo-Element - Before */
+
+.card h2::before {
+    content: "★ ";
+}
+
+/* Pseudo-Element - After */
+
+.card h2::after {
+    content: " ★";
+}
+
+/* First Letter */
+
+.card p:first-of-type::first-letter {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+/* First Line */
+
+.card p:last-of-type::first-line {
+    font-weight: bold;
+}
+
+/* CSS Specificity */
+
+p {
+    color: black;
+}
+
+.card p {
+    color: darkblue;
+}
+
+/* Inheritance */
+
+.card {
+    color: brown;
+}
+
+.card h2,
+.card p {
+    font-family: Arial, sans-serif;
+}
