@@ -1,0 +1,203 @@
+/* Common Style */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+
+/* 1. Different Layouts using Flexbox */
+
+.flex-layout {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-layout div {
+    background-color: lightblue;
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+}
+
+
+/* 2. Responsive Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 3. Card Layout using Flexbox */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+
+/* 4. Multi-column Layout using Grid */
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.grid-layout div {
+    background-color: lightgreen;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* 5. repeat(), fr and minmax() */
+
+.responsive-grid {
+    display: grid;
+
+    /* repeat() = repeats the columns */
+    /* 1fr = equal available space */
+    /* minmax() = minimum and maximum size */
+
+    grid-template-columns:
+        repeat(4, minmax(150px, 1fr));
+
+    gap: 15px;
+}
+
+.responsive-grid div {
+    background-color: lightyellow;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* 6. Grid Areas */
+
+.page-layout {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+
+    gap: 10px;
+}
+
+.page-layout header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 25px;
+}
+
+.page-layout nav {
+    grid-area: nav;
+    background-color: lightgreen;
+    padding: 25px;
+}
+
+.page-layout main {
+    grid-area: main;
+    background-color: lightyellow;
+    padding: 25px;
+}
+
+.page-layout footer {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+
+/* 7. Flexbox vs Grid */
+
+.comparison {
+    display: flex;
+    gap: 20px;
+}
+
+.comparison div {
+    flex: 1;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-layout {
+        flex-direction: column;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .responsive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-layout {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .comparison {
+        flex-direction: column;
+    }
+}

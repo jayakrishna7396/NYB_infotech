@@ -1,0 +1,123 @@
+/* Common Flex Container */
+
+.container {
+    display: flex;
+    width: 600px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Common Items */
+
+.container div {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 1. Flex Container */
+
+.direction {
+    display: flex;
+}
+
+
+/* 2. flex-direction */
+
+.direction {
+    flex-direction: row;
+}
+
+
+/* 3. justify-content */
+
+.justify {
+    justify-content: space-around;
+}
+
+
+/* 4. align-items */
+
+.align {
+    height: 150px;
+    align-items: center;
+}
+
+
+/* 5. align-content */
+
+.content {
+    height: 250px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.content div {
+    width: 150px;
+}
+
+
+/* 6. flex-wrap */
+
+.wrap {
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.wrap div {
+    width: 150px;
+}
+
+
+/* 7. gap */
+
+.gap {
+    gap: 30px;
+}
+
+
+/* 8. flex-grow */
+
+.grow div {
+    flex-grow: 1;
+}
+
+.grow div:nth-child(2) {
+    flex-grow: 2;
+}
+
+
+/* 9. flex-shrink */
+
+.shrink div {
+    width: 300px;
+}
+
+.shrink div:nth-child(2) {
+    flex-shrink: 0;
+}
+
+
+/* 10. flex-basis */
+
+.basis div {
+    flex-basis: 150px;
+}
+
+
+/* 11. order */
+
+.order .item1 {
+    order: 3;
+}
+
+.order .item2 {
+    order: 1;
+}
+
+.order .item3 {
+    order: 2;
+}
