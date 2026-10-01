@@ -1,0 +1,12 @@
+button {
+    padding: 15px 30px;
+    background-color: lightblue;
+    border: none;
+
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}

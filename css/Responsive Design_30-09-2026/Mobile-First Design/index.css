@@ -1,0 +1,25 @@
+/* Mobile First */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    padding: 30px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Tablet and Desktop */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .box {
+        flex: 1;
+    }
+}

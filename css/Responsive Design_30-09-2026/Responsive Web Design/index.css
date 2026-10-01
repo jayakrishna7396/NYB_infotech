@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 40px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        background-color: lightgreen;
+    }
+}

@@ -1,0 +1,9 @@
+.box {
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+    width: 150px;
+    padding: 30px;
+    background-color: lightblue;
+}

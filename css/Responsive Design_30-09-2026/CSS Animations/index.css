@@ -1,0 +1,18 @@
+.box {
+    width: 150px;
+    padding: 30px;
+    background-color: lightblue;
+    text-align: center;
+
+    animation: moveBox 2s infinite;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
