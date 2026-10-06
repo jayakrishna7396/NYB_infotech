@@ -68,6 +68,17 @@ import NestedRoutingpage from './pages/NestedRouting_02-09-2026/NestedRoutingpag
 import LoginPage from './pages/ProtectedRoute_02-09-2026/LoginPage'
 import NotFoundpage from './pages/NotFound_02-09-2026/NotFoundpage'
 import ProtectedRoutingpage from './pages/ProtectedRoute_02-09-2026/ProtectedRoutingpage'
+import HomePage1 from './Pages_05-10-2026/Compounds_05-10-2026/HomePage1'
+import WelcomePage from './Pages_05-10-2026/Function_05-10-2026/WelcomePage'
+import JSXPage from './Pages_05-10-2026/Jsx/JSXPage'
+import JSXRulesPage from './Pages_05-10-2026/JSXRules/JSXRulesPage'
+import ValidInvalidJSXPage from './Pages_05-10-2026/ValidInvalidJSX_05-10-2026/ValidInvalidJSXPages'
+import FragmentPage from './Pages_05-10-2026/FragmentExample/FragmentPage'
+import RenderingPage from './Pages_05-10-2026/Rendering Components/RenderingPage'
+import FunctionCallingPage from './Pages_05-10-2026/FunctionCalling/FunctionCallingPage'
+import ReactBasicsPage from './Pages_05-10-2026/Assigment_05-10-2026/ReactBasicsPage'
+import ProfilePage from './Pages_05-10-2026/Mini Task_05-10-2026/ProfilePage'
+
 
 
 const App = () => {
@@ -143,6 +154,16 @@ const App = () => {
        <Route path='/Login' element={<LoginPage/>}/>
        <Route path='/ProtectedRouting' element={<ProtectedRoutingpage/>}/>
        <Route path='/NotFound' element={<NotFoundpage/>}/>
+       <Route path="/Home" element={<HomePage1/>}/>
+       <Route path="/welcome" element={<WelcomePage/>}/>
+       <Route path="/Jsx" element={<JSXPage/>}/>
+       <Route path="/JsxRules" element={<JSXRulesPage/>}/>
+       <Route path="/ValidInvalidJSX" element={<ValidInvalidJSXPage/>}/>
+       <Route path="/FragmentExample" element={<FragmentPage/>}/>
+       <Route path="/Rendering" element={<RenderingPage/>}/>
+       <Route path="/FunctionCalling" element={<FunctionCallingPage/>}/>
+       <Route path="/react-basics" element={<ReactBasicsPage />} />
+       <Route path="/profile" element={<ProfilePage />} />
       </Routes>
 
     </BrowserRouter>
