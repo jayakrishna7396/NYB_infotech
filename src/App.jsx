@@ -164,6 +164,8 @@ const App = () => {
        <Route path="/FunctionCalling" element={<FunctionCallingPage/>}/>
        <Route path="/react-basics" element={<ReactBasicsPage />} />
        <Route path="/profile" element={<ProfilePage />} />
+       <Route path="/Props" element={<PropsPage/>}/>
+       <Route path="/State" element={<StatePage/>}/>
       </Routes>
 
     </BrowserRouter>
