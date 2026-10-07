@@ -59,13 +59,11 @@ import ProductSearchpage from './pages/ProductSearch_01-09-2026/ProductSearchpag
 import ReactMemopage from './pages/ReactMemo_01-09-2026/Reactmemopage'
 import UseMemopage from './pages/UseMemo_01-09-2026/UseMemoPage'
 import UseCallbackpage from './pages/UseCallback_01-09-2026/UseCallbackPage'
-import LazyLoadingpage from './pages/LazyLoading_01-09-2026/LazyLoadingPage'
-import CodeSplittingpage from './pages/CodeSplitting_01-09-2026/CodeSplittingPage'
-import ContextAPIpage from './pages/ContextAPI_01-09-2026/ContextAPIpage'
-import UseReducerpage from './pages/UseReducer_01-09-2026/UseReducerPage'
-import ReactRouterpage from './pages/ReactRouter_01-09-2026/ReactRouterpage'
-import NestedRoutingpage from './pages/NestedRouting_02-09-2026/NestedRoutingpage'
-import LoginPage from './pages/ProtectedRoute_02-09-2026/LoginPage'
+import ContextAPIpage from "./pages/ContextAPI_01-09-2026/ContextAPIpage";
+import UseReducerpage from "./pages/UseReducer_01-09-2026/UseReducerPage";
+import ReactRouterPage from "./pages/ReactRouter_01-09-2026/ReactRouterPage";
+import NestedRoutingpage from "./pages/NestedRouting_02-09-2026/NestedRoutingpage";
+import LoginPage from "./pages/ProtectedRoute_02-09-2026/LoginPage";
 import NotFoundpage from './pages/NotFound_02-09-2026/NotFoundpage'
 import ProtectedRoutingpage from './pages/ProtectedRoute_02-09-2026/ProtectedRoutingpage'
 import HomePage1 from './Pages_05-10-2026/Compounds_05-10-2026/HomePage1'
@@ -78,6 +76,17 @@ import RenderingPage from './Pages_05-10-2026/Rendering Components/RenderingPage
 import FunctionCallingPage from './Pages_05-10-2026/FunctionCalling/FunctionCallingPage'
 import ReactBasicsPage from './Pages_05-10-2026/Assigment_05-10-2026/ReactBasicsPage'
 import ProfilePage from './Pages_05-10-2026/Mini Task_05-10-2026/ProfilePage'
+import UseStatePage from './Pages_05-10-2026/UseState/UseStatePage'
+import ParentChildPage from './Pages_05-10-2026/ParentChild/ParentChildPage2'
+import ParentChildPage2 from './Pages_05-10-2026/ParentChild/ParentChildPage2'
+import ChildParentPage from './Pages_05-10-2026/Sending Child to Parent_06-10-2026/ChildParentPage'
+import HomePage from './Pages_05-10-2026/Component Hierarchy_06-10-2026/HomePage'
+import FunctionPropsPage from './Pages_05-10-2026/Passing Functions as Props_06-10-2026/FunctionPropsPage'
+import SharingDataPage from './Pages_05-10-2026/Sharing Data Between Components/SharingDataPage'
+import ConditionalRenderingPage2 from './Pages_05-10-2026/ConditionalRendering_06-10-2026/ConditionalRenderingPage2'
+import PropsStatePage from './Pages_05-10-2026/Assigment_06-10-2026/PropsStatePage'
+import ProductManagementPage from './Pages_05-10-2026/Task_06-10-2026/ProductManagementPage'
+
 
 
 
@@ -147,11 +156,18 @@ const App = () => {
        <Route path='/UseCallback' element={<UseCallbackpage/>}/>
        <Route path='/LazyLoading' element={<LazyLoadingpage/>}/>
        <Route path='/CodeSplitting' element={<CodeSplittingpage/>}/>
-       <Route path='/ContextAPI' element={<ContextAPIpage/>}/>
-       <Route path='/UseReducer' element ={<UseReducerpage/>}/>
-       <Route path='/ReactRouter' element={<ReactRouterpage/>}/>
-       <Route path='/NestedRouting' element={<NestedRoutingpage/>}/>
-       <Route path='/Login' element={<LoginPage/>}/>
+       <Route path="/context-api" element={<ContextAPIpage />} />
+
+        <Route path="/use-reducer" element={<UseReducerpage />} />
+
+        <Route path="/react-router" element={<ReactRouterPage />} />
+
+        <Route
+          path="/nested-routing"
+          element={<NestedRoutingpage />}
+        />
+
+        <Route path="/login" element={<LoginPage />}/>
        <Route path='/ProtectedRouting' element={<ProtectedRoutingpage/>}/>
        <Route path='/NotFound' element={<NotFoundpage/>}/>
        <Route path="/Home" element={<HomePage1/>}/>
@@ -166,7 +182,17 @@ const App = () => {
        <Route path="/profile" element={<ProfilePage />} />
        <Route path="/Props" element={<PropsPage/>}/>
        <Route path="/State" element={<StatePage/>}/>
-      </Routes>
+       <Route path="/UseState" element={<UseStatePage/>}/>
+       <Route path="/ParentChild" element={<ParentChildPage/>}/>
+       <Route path="/Parentchild2" element={<ParentChildPage2/>}/>
+       <Route path="/ChildParent" element={<ChildParentPage/>}/>
+       <Route path="/Component Hierarchy" element={<HomePage/>}/>
+       <Route path="/Passing Functions as Props" element={<FunctionPropsPage/>}/>
+       <Route path="/Sharing Data Between Components" element={<SharingDataPage/>}/>
+       <Route path="/Conditional Rendering" element={<ConditionalRenderingPage2/>}/>
+       <Route path="/PropsState" element={<PropsStatePage/>}/>
+       <Route path="/ProductManagement" element={<ProductManagementPage/>}/>
+      </Routes >
 
     </BrowserRouter>
   )
