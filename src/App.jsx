@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ComponentsPage from './pages/components/ComponentsPage'
 import FragmentsPage from './pages/Fragments/FragmentsPage'
 import PropsPage from './pages/props/PropsPage'
-import ConditionalRenderingPage from './pages/conditional renduring_22-07-2026/ConditionalRenderingPage'
 import CompositionPage from './pages/Composition/CompositionPage'
 import StatePage from "./pages/statemanagement/StatePage"
 import ApiPage from "./pages/ApiComponent/ApiPage"
@@ -57,13 +56,6 @@ import APIResponsepage from './pages/APIResponse_01-09-2026/APIResponsePage'
 import RegistrationFormpage from './pages/Registration_01-09-2026/RegistrationFormpage'
 import ProductSearchpage from './pages/ProductSearch_01-09-2026/ProductSearchpage'
 import ReactMemopage from './pages/ReactMemo_01-09-2026/Reactmemopage'
-import UseMemopage from './pages/UseMemo_01-09-2026/UseMemoPage'
-import UseCallbackpage from './pages/UseCallback_01-09-2026/UseCallbackPage'
-import ContextAPIpage from "./pages/ContextAPI_01-09-2026/ContextAPIpage";
-import UseReducerpage from "./pages/UseReducer_01-09-2026/UseReducerPage";
-import ReactRouterPage from "./pages/ReactRouter_01-09-2026/ReactRouterPage";
-import NestedRoutingpage from "./pages/NestedRouting_02-09-2026/NestedRoutingpage";
-import LoginPage from "./pages/ProtectedRoute_02-09-2026/LoginPage";
 import NotFoundpage from './pages/NotFound_02-09-2026/NotFoundpage'
 import ProtectedRoutingpage from './pages/ProtectedRoute_02-09-2026/ProtectedRoutingpage'
 import HomePage1 from './Pages_05-10-2026/Compounds_05-10-2026/HomePage1'
@@ -81,11 +73,25 @@ import ParentChildPage from './Pages_05-10-2026/ParentChild/ParentChildPage2'
 import ParentChildPage2 from './Pages_05-10-2026/ParentChild/ParentChildPage2'
 import ChildParentPage from './Pages_05-10-2026/Sending Child to Parent_06-10-2026/ChildParentPage'
 import HomePage from './Pages_05-10-2026/Component Hierarchy_06-10-2026/HomePage'
-import FunctionPropsPage from './Pages_05-10-2026/Passing Functions as Props_06-10-2026/FunctionPropsPage'
-import SharingDataPage from './Pages_05-10-2026/Sharing Data Between Components/SharingDataPage'
-import ConditionalRenderingPage2 from './Pages_05-10-2026/ConditionalRendering_06-10-2026/ConditionalRenderingPage2'
-import PropsStatePage from './Pages_05-10-2026/Assigment_06-10-2026/PropsStatePage'
-import ProductManagementPage from './Pages_05-10-2026/Task_06-10-2026/ProductManagementPage'
+import FunctionPropsPage from "./Pages_05-10-2026/Passing Functions as Props_06-10-2026/FunctionPropsPage";
+import SharingDataPage from "./Pages_05-10-2026/Sharing Data Between Components/SharingDataPage";
+import ConditionalRenderingPage from "./Pages_05-10-2026/Conditional Rendering_07-10-2026/ConditionalRenderingPage";
+import PropsStatePage from "./Pages_05-10-2026/Assigment_06-10-2026/PropsStatePage";
+import ProductManagementPage from "./Pages_05-10-2026/Task_06-10-2026/ProductManagementPage";
+import EventHandlingPage from './Pages_05-10-2026/EventHandling_07-10-2026/EventHandlingPage'
+import FormHandlingPage from './Pages_05-10-2026/FormHandling_07-10-2026/FormHandlingPage'
+import ControlledComponentsPage from './Pages_05-10-2026/Controlled Components_07-10-2026/ControlledComponentsPage'
+import InputHandlingPage from './Pages_05-10-2026/Input Handling_07-10-2026/InputHandlingPage'
+import DynamicFormsPage from './Pages_05-10-2026/Dynamic Forms_07-10-2026/DynamicFormsPage'
+import ListRenderingPage from './Pages_05-10-2026/List Rendering_07-10-2026/ListRenderingPage'
+import MapExamplePage from './Pages_05-10-2026/map()_07-10-2026/MapExamplePage'
+import KeysExamplePage from './Pages_05-10-2026/Keys_07-10-2026/KeysExamplePage'
+import UseEffectPage from './Pages_05-10-2026/useEffect_07-10-2026/UseEffectPage'
+import LifecyclePage from './Pages_05-10-2026/Component Lifecycle_07-10-2026/LifecyclePage'
+import DependencyArrayPage from './Pages_05-10-2026/Dependency Array_07-10-2026/DependencyArrayPage'
+import ReactPracticePage from './Pages_05-10-2026/Assigment_07-10-2026/ReactPracticePage'
+import UserRegistrationPage from './Pages_05-10-2026/Task_07-10-2026/UserRegistrationPage'
+
 
 
 
@@ -192,6 +198,20 @@ const App = () => {
        <Route path="/Conditional Rendering" element={<ConditionalRenderingPage2/>}/>
        <Route path="/PropsState" element={<PropsStatePage/>}/>
        <Route path="/ProductManagement" element={<ProductManagementPage/>}/>
+       <Route path="/EventHandling" element={<EventHandlingPage/>}/>
+       <Route path="/FormHandling" element={<FormHandlingPage/>}/>
+       <Route path="/controlledComponents" element={<ControlledComponentsPage/>}/>    
+       <Route path="/InputHandling" element={<InputHandlingPage/>}/> 
+       <Route path="/DynamicForms" element={<DynamicFormsPage/>}/>
+       <Route path="ListRenduring" element={<ListRenderingPage/>}/>
+       <Route path="MapExample" element={<MapExamplePage/>}/>
+       <Route path="/KeysExample" element={<KeysExamplePage/>}/>
+       <Route path="/conditional-rendering" element={<ConditionalRenderingPage />} />
+       <Route path="/UseEffect" element={<UseEffectPage/>}/>
+       <Route path="/Lifecycle" element={<LifecyclePage/>}/>
+       <Route path="/DependencyArray" element={<DependencyArrayPage/>}/>
+       <Route path="/ReactPractice" element={<ReactPracticePage/>}/>
+       <Route path="/UserRegistration" element={<UserRegistrationPage/>}/>
       </Routes >
 
     </BrowserRouter>

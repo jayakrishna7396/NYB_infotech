@@ -8,7 +8,7 @@ function ConditionalRendering() {
       <h2>Conditional Rendering</h2>
 
       {isLoggedIn ? (
-        <h3>Welcome, Krishna!</h3>
+        <h3>Welcome, User!</h3>
       ) : (
         <h3>Please Login</h3>
       )}

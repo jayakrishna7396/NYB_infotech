@@ -1,5 +1,4 @@
-import DynamicForm from "../../components_25-08-2026/DynamicForm_01-09-2026/DynamicForm"
-
+import DynamicForm from "../../components_25-08-2026/DynamicForm_02-09-2026/DynamicForm"
 const DynamicFormpage =()=>{
     return(
         <div>
